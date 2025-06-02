@@ -10,7 +10,6 @@ li{ list-style-type: none;}
 /* =========== 헤더 CSS ============ */
 #header{ 
     display: flex; 
-    flex-direction: row; /* 가로배치 : 생략가능*/
     justify-content: space-between; /* 균등 가로 정렬*/
     align-items: center; /* 세로 가운데 정렬 */
     width: 1280px;      /* 가로 사이즈 */
