@@ -1,0 +1,36 @@
+.bg{
+    width: 1900px;
+    height: 925px;
+    border: 1px solid red;
+    
+}
+
+.title{
+    width: 1900px;
+    height: 100px;
+    border: 1px solid blue;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "윤고딕";
+    text-align: center;
+}
+
+.menu{
+    width: 370px;
+    height: 822px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 200px 0;
+    padding-left: 10px;
+    line-height: 70px;
+
+}
+
+.subtitle{
+    width: 300px;
+    height: 300px;
+    border: 1px solid purple;
+    display: flex;
+    margin: 0 auto;
+}

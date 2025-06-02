@@ -1,0 +1,25 @@
+.box{
+    width: 500px;
+    height: 680px;
+    border: 1px solid gray ;
+    margin: 0 auto;
+}
+.text1{
+    border-top: 1px solid gray;
+}
+.img{
+    padding-top: 30px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+}
+
+.left1, .left2{
+    padding-left: 30px;
+}
+
+.point{
+    color: orange;
+    font-weight: bold;
+}

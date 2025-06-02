@@ -1,0 +1,38 @@
+[ GitHub ]
+    - 분산 버전(코드상태) 관리 툴 제공하는 웹 서비스
+    1. 웹 서비스에서 코드들을 저장하는 *코드 저장소
+    2. 다양한 기업들이 사용하는 협업 플랫폼
+[ 회원가입 ]
+    1. https://github.com/
+    2. [ sign up ] 버튼 클릭하여 회원가입 진행 *이메일 필요
+[ 로그인 ]
+    1. [ Sign in ] 버튼 클릭하여 로그인 진행 
+    2. Dashboard 페이지 확인 
+
+[ vscode 와 github 최초 연동 ]
+    =================(PC마다 1번)===================== 
+    1. vscode 왼쪽 메뉴  [소스제어] 클릭 -> windows용 git다운로드
+        https://git-scm.com/downloads
+    2. [ Git for Windows/x64 Setup. ] 클릭하여 설치 진행 
+    3. 다운로드 된 [Git-2.49.0-64-bit.exe] 실행파일 실행 
+    4. 기본설정으로 [next] 버튼 클릭하여 설치 진행 -> 완료
+    5. VSCODE 재실행
+    6. vscode 왼쪽 메뉴  [소스제어] 클릭 -> GitHub에 게시 -> [로그인]허용 -> 웹페이지 (GITHub 페이지(로그인)) -> (continue)
+    7.Publish to Public to gihub repostory
+
+    ================(PC 마다 1번, 자리 변경시)
+    8. vscode 상단 메뉴 [터미널] 클릭 -> [새 터미널]
+    9. 터미널 상단 메뉴 [+] 옆에 [v] -> [git bash] *깃허브 전용 터미널 (명령어 이용한 프로그램 사용)
+        [git user.name 설정]  git config --global user.name (ex-name)
+        [git user.name 확인]  git config --global user.name
+        [git user.email 설정]  git config --global user.email (ex- aaa@naver.com)
+        [git user.email 확인]  git config --global user.email
+    10. vscode 왼쪽 메뉴 [소스제어] 클릭 ->
+        1. 상단에 메시지(코드를 업로드할때 기록할 메모) 작성
+        2. [ 커밋 ] * 현재 PC에 GITHub 완료
+        3. 
+
+    [원격 추가] 버튼 클릭
+
+
+asdfasdfasd

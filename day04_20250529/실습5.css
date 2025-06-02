@@ -1,0 +1,71 @@
+.box{
+    text-align: center;
+    width: 500px;
+    height: 830px;
+    margin: 0px auto;
+    background-color: pink;
+    
+}
+
+.jjanggu{
+    border: 3px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom : 20px;
+}
+
+.jjang_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.jump{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn button[type=button]{
+    background-color: skyblue;
+    padding : 30px 150px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+    font-size : 25px;
+    font-weight: bold;
+    color : white;
+    border : none;
+}
+
+.btn1 button[type=button]{
+    background-color: skyblue;
+    padding : 30px 125px;
+    margin-bottom : 10px;
+    border-radius: 10px;
+    font-size : 25px;
+    font-weight: bold;
+    color : white;
+    border : none;
+}
+
+.btn2 button[type=button]{
+    background-color: skyblue;
+    padding : 30px 140px;
+    border-radius: 10px;
+    font-size : 25px;
+    font-weight: bold;
+    color : white;
+    border : none;    
+}
+
+
+
+

@@ -1,0 +1,29 @@
+.bg{
+    border: 1px solid red;
+        width: 1900px;
+    height: 930px;
+
+}
+
+.main_title{
+    width: 1900px;
+    height: 90px;
+    border: 1px solid blue;
+    font-size: 60px;
+}
+
+.menu{
+    display: flex;
+    width: 380px;
+    height: 835px;
+    border: 1px solid green;
+    font-size: 30px;
+}
+
+.sub_title{
+    width: 1600px;
+    height: 90px;
+    border: 1px solid green;
+    font-size: 10px;
+    display: flex;
+}

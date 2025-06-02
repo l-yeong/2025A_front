@@ -1,0 +1,131 @@
+/* =========== 공통 CSS ============ */
+
+*{ padding: 0px; margin: 0px; } /* 기본 여백 제거 */
+*{ box-sizing: border-box; } /* 구역 사이즈를 테두리까지 기준 */
+a{ 
+    text-decoration: none; 
+    color: black; 
+}
+li{ list-style-type: none;}  
+/* =========== 헤더 CSS ============ */
+#header{ 
+    display: flex; 
+    flex-direction: row; /* 가로배치 : 생략가능*/
+    justify-content: space-between; /* 균등 가로 정렬*/
+    align-items: center; /* 세로 가운데 정렬 */
+    width: 1280px;      /* 가로 사이즈 */
+    margin:  15px auto;    /* 구역 가로 가운데 자동 정렬 */
+}
+.top-menu{
+    display: flex; justify-content: flex-end;
+}
+.main-menu{
+    display: flex; justify-content: flex-end;
+}
+.main-menu > li{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 30px 100px;    /* 시계방향으로 위 , 오른쪽 , 아래 , 왼쪽 */
+}
+/* =========== 본문 CSS ============ */
+#main-img > img{   width: 100%; }
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+}
+.sidebar{ width: 250px; }
+.content{ 
+    display: flex; justify-content: space-between;
+    width: 1000px; 
+}
+.content > .leftbox{ width: 490px; }
+.content > .rightbox{ width: 490px; }
+/* =========== (사이드바) 본문 CSS ============ */
+.sidebar > .title{
+    background-color: #0ca9a2;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.sidebar > .comment{
+    line-height: 160%; /* 줄간격 */
+    padding: 5px;
+}
+.sidebar > .searchbox > .search-input{
+    width: 180px; height: 30px;
+    border-radius: 10px; 
+    padding: 1px 7px; 
+}
+.sidebar > .searchbox > .search-btn{
+    padding: 4px 10px; /* 안쪽 여백 넣어줌으로써 버튼크기 수정*/
+}
+.sidebar > .searchbox { margin: 10px 0px;}
+.sidebar > .sub-title{
+    border-top: solid 2px black; /* 위쪽 테두리 */
+    border-bottom: solid 1px gray; /* 아래쪽 테두리 */
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px;
+}
+.sidebar > .sub-menu > li{ padding: 5px 10px; }
+
+/* =========== (왼쪽) 본문  CSS ==========*/
+.content .sub-title{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.content > .leftbox > .board >li{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+
+.content > .leftbox > .board{
+    margin-bottom: 50px;
+}
+
+/*========== (오른쪽) 본문 CSS ==========*/
+.content > .rightbox > .product-list{
+    display:flex;
+    flex-wrap:wrap;
+   
+}
+
+.rightbox > .product-list > .product{
+    width: 235px;
+    margin-bottom: 30px;
+}
+
+/*=========== 푸터 =============*/
+#footer{
+    background-color: #05344e;
+    color: white;
+    padding: 20px 0px;
+}
+.footer-inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-inner > .top-menu{
+    display:flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.footer-inner > .top-menu > li{ margin-right: 40px;}
+.footer-inner > .bottom-memu{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-inner > .bottom-memu .footer-title{
+    margin-bottom: 10px;
+}
+.footer-inner > .bottom-memu li {
+    margin: 5px 0px;
+}

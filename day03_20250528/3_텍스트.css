@@ -1,0 +1,39 @@
+/* 누구를{ 무엇을 : 어떻게; } */
+
+/* 웹폰트 : 폰틑 저작권
+    무료 한글폰트 : https://noonnu.cc 에서 웹폰트 코드 복사
+    무료 영문폰트 : https://fonts.google.com/
+*/
+
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+
+.title{
+    font-family: "굴림";        /*글꼴/폰트 : 현재 PC설치된 글꼴 가능*/
+    font-size: 50px;            /*글자 크기 px*/
+    font-style: italic;         /*italic 글자 기울기*/
+    font-weight: bold;
+}
+
+.content{
+    font-family: 'MaruBuri';    /* 웹 글꼴*/
+    color: pink;              /* 글꼴 색상 */
+    word-spacing: 60px;         /* 단어 간격 : 어간 */
+    letter-spacing: 20px;       /* 글자 간격 : 자간 */
+    line-height: 150%;          /* 줄 간격 */
+}
+
+.writer{
+    text-align: center;         /*텍스트 가로 정렬 : left,right,center */
+    /* 텍스트 선 긋기 : underline (하단) overline (상단) line-through(중간)*/
+    text-decoration: underline overline line-through; 
+    /* 텍스트 그림자 : x축 y축 흐림정도 색상 */
+    text-shadow: 10px 10px 5px red;
+    /* 색상 : 3가지 (1.색상명 2.RGB 3.헥사코드(16진수 )*/
+    color: green; /* 1.색상명 */
+    color: rgb(0,255,0); /* RGB */
+    color: #000000;
+}

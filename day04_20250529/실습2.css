@@ -1,0 +1,42 @@
+.bookimg{
+    width : 500px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 3px;
+
+}
+.title_1{
+    font-size: 30px;
+    color: orange;
+}
+
+.content{
+    background-color:darkcyan;
+    color:white;
+    padding: 25px 10px;
+    line-height: 160%;
+    width: 480px;
+}
+
+.contentpoint{
+    color:orange;
+}
+
+.title_2{
+    font-size: 30px;
+    color: orange;
+}
+
+.content2{
+    background-color:darkcyan;
+    color:white;
+    padding: 25px 10px;
+    line-height: 160%;
+    width: 480px;
+}
+
+.contentpoint2{
+    color:orange;
+}

@@ -1,0 +1,43 @@
+/* CSS 문법 :  선택자 { 무엇을 : 어떻게; }*/
+/* 제품 구역 */
+
+.product{
+    border : 1px solid #eeeeee;
+    width: 300px;
+    padding: 10px;
+}
+
+.img{ width: 300px;}
+
+.product-info{
+    border-top: 1px solid #eeeeee;
+    padding: 10px;
+}
+
+.product-info > .title{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.product-info > .price{
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.product-info > .content{
+    font-size: 12px;
+    line-height: 160%; /*줄 간격*/
+    margin-bottom: 10px;
+}
+
+.product > .etc {
+    line-height: 160%;
+    margin-bottom: 10px;
+}
+
+.product-info > .etc > .orange{
+    color:orange;
+    font-weight: bold;
+}

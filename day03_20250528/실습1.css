@@ -1,0 +1,46 @@
+#today{
+    font-family: '궁서';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 60px;
+    font-weight: 50%;
+
+}
+
+#best{
+    font-family: '굴림';
+    font-size: 20px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: blue;
+}
+
+#nelson{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+}
+
+#mind{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+}
+
+#page{
+    font-size: 20px;
+    word-spacing: 60px;
+    letter-spacing: 15px;
+    font-weight: bold;
+    color: blue;
+}
+
+#goodday{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+}
