@@ -1,0 +1,20 @@
+*{
+    padding : 0px; margin: 0px;
+    box-sizing: border-box; font-size: 12px;
+}
+li{ list-style-type: none;}
+a{ text-decoration: none;}
+
+#wrap{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 200px auto;
+}
+#main{
+    margin : 50px auto;
+}
+
+.logo > img{ width: 200px;
+    
+}
