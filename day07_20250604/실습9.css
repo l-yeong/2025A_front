@@ -1,0 +1,155 @@
+*{
+    padding : 0px; margin: 0px;
+    box-sizing: border-box; font-size: 12px;
+}
+li{ list-style-type: none;}
+a{ color: black; text-decoration: none;}
+
+#wrap{}
+
+#header{
+    width: 100%;
+    display: contents;
+}
+
+/*상단 메뉴*/
+#topmenu{
+    display: flex; justify-content: flex-end;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px;
+}
+#topmenu > li > span{ padding : 0px 15px;}
+#topmenu li img { width: 20px; margin: 20px 20px 0px 0px;}
+
+/*본메뉴*/
+#mainmenu{
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0px 40px;
+}
+#mainmenu > ul { display:flex; width: 80%;}
+#mainmenu > ul > li{
+    height: 80px; width: 80px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+#searchbox{ border-bottom: 1px solid black;}
+#searchbox > input{ border: none; padding : 5px; width: 130px; background-color:  rgba(255,255,255,0);}
+#searchbox > img{width: 15px;}
+*:focus{ outline:none;}
+#mainmenu .new{color: red;}
+#mainmenu .log{width: 155px;}
+
+/*드롭메뉴*/
+#mainmenu > ul > li{ position: relative;}
+#mainmenu .submenu{
+    position: absolute;
+    top : 80px;
+    background-color: white;
+    text-align: center;
+    display:none;
+}
+#mainmenu .submenu >li{margin:10px;}
+/*마우스 올렸을때 서브메뉴 보이도록*/
+#mainmenu >ul > li:hover .submenu{ display: block;}
+
+/*스티키 활용*/
+#mainmenu{
+    position:sticky;
+    top:0px;
+    background-color: rgba(255,255,255,0.8);
+}
+/*메인 이미지*/
+#mainimg{width: 100%;}
+/* 본문 */
+#content > .title{
+    margin-top: 50px; font-size: 17px;
+    text-align: center; font-weight: bold;
+}
+
+#content > .commnet{
+    font-size:10px; text-align: center;
+    color: #999999; margin: 20px 0px;
+}
+
+#items > .item{width:380px; margin: 30px 0px;}
+#items > .item > .itemimg{width : 100%}
+#items .color > span{
+    width: 10px; height: 10px;
+    display: inline-block;
+    border: 1px solid #DBDBDB;
+}
+
+#tems.colorreivew{
+    display: flex; justify-content: space-between;
+    margin: 5px 0px;
+}
+
+#items .review{ color: #999999;}
+#items .itemname{ margin : 5px 0px;}
+#items .itemname >.size{
+    font-size : 10px; color :#999999; margin: 1px 0px;
+}
+
+#items .itemprice{ position: relative; margin: 5px 0px;}
+#items .disc{
+    position: absolute; right: 0px; top: 0px;
+    font-size:15px; color:red; font-weight: bold;
+}
+
+#items .price{
+    text-decoration: line-through;
+    color:#999999;
+}
+#items{
+    display:flex; flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer{ margin-top :100px;}
+
+#footerbottom{
+    text-align: center;
+    font-size: 10px; color:#999999;
+    margin : 30px 0px ;line-height: 160%;
+}
+
+#footertop {
+    background-color: #f7f7f7;
+}
+
+#footercontent{
+    width: 1400px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    padding: 50px 100px;
+}
+
+#footercontent h3{ margin : 10px 0px; font-size:16px; font-weight: bold;}
+#footercontent h4{ margin : 10px 0px; font-size:18px; font-weight: bold;}
+#footercontent ul> li{margin-bottom: 10px;}
+
+#popup{
+    position:fixed;
+    right:0px; top: 30%;
+}
+/*팝업*/
+#popup img{ width: 20px;}
+#popup > ul > li{
+    padding: 14px;
+    border : 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+    position:relative
+}
+
+#popup > ul > li > span{
+    position: absolute; top: 10px; right: 40px;
+    display: none;
+
+    width: 80px; height: 20px;
+    background-color: black; color: white;
+    border-radius: 5px; text-align: center;
+}
+#popup > ul > li:hover .popupsub{
+    display: inline;
+}
+#content{ width: 1600px; margin: 0 auto;}
+#footer{ width: 100%;}
