@@ -3,7 +3,9 @@
     box-sizing: border-box; font-size: 12px;
 }
 li{ list-style-type: none;}
-a{ text-decoration: none;}
+a{ text-decoration: none;
+    font-size: 15px;
+}
 /* wrap*/
 #wrap{
     width: 1280px;
@@ -17,10 +19,104 @@ a{ text-decoration: none;}
 }
 
 /*메인 이미지*/
+#mainimg > img{
+    margin-left: 300px;
+}
+
+/*로그인 이미지*/
 .logo > img{ width: 200px;
+}
+/* 로그인 박스 */
+
+input[type="text"] {
+  border: 1px solid gray; 
+  border-radius: 5px;
+  width: 270px;
+  height: 30px;
+  padding: 9px 0px 7px 8px;
+  margin : 5px 0px;
+  font-size: 15px;
+}
+
+input[type="password"] {
+  border: 1px solid gray; 
+  border-radius: 5px;
+  width: 270px;
+  height: 30px;
+  padding: 9px 0px 7px 8px;
+  margin : 5px 0px;
+  font-size: 15px;
+}
+
+button[type="button"]{
+    width: 270px;
+    height: 32px;
+    border-radius: 5px;
+    border:none;
+    background-color: #0069ad;
+    color : white;
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+/* 또는 */
+.line{ 
+    display:flex; 
+    align-items: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    
+}
+.line::after, .line::before{
+    content:" ";
+    width: 100px;
+    height: 1px;
+    background-color: gray;
+    margin : 0 auto;
+}
+.fbimg{
+    margin-left: 60px;
+    width: 160px;
+}
+.pwd_forgot{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 70px;   
+}
+
+#signup{
+    margin: 50px 0px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size : 15px;
+}
+
+#appdown > span{
+    font-weight: bold;
+    font-size:15px;
+    margin-left: 80px;
+}
+
+.applist{
+    margin-top: 20px;
+    display:flex;
+}
+
+
+#footer{
+    width: 1280px;
+    display:flex;
+    justify-content: space-between;
     
 }
 
-.login .log_id{
-    color: blue;
+.footermainmenu{
+    display:flex;
+    align-items: center;
+    margin : 0 auto;
+   
+}
+.footersubmenu{
+    display:flex;
+   
 }
