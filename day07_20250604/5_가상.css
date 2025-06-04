@@ -1,0 +1,53 @@
+
+/* 1. 경계선 CSS*/ 
+.divider{
+    display: flex;
+    align-items: center;
+    width:400px;
+}
+
+.divider::before, .divider::after{
+    content:"";     /* 가상요소에는 빈 문자열*/
+    width: 100px;
+    height: 1px;    /* 선 굵기*/  
+    background-color: black;
+    margin: 0 10px;
+}
+
+/* 2. 드랍다운 메뉴1 CSS */
+li{    list-style-type: none;}
+#header{ background-color: beige; }
+#header > ul{ display: flex; justify-content: center;}
+#header > ul > li{
+    padding: 20px;
+    position: relative;
+}
+
+#header .submenu{
+    position:absolute;
+    top: 50px; left: 0px; /* 본메뉴 바로 50px 아래*/
+    background-color: red;
+    padding: 10px;
+    display: none; /*none 화면에 표시하지 않는다.*/
+}
+
+/* 만약에 해당 메뉴를 hover 했을때 서브메뉴(드롭다운) 열기 
+    -> .menu를 hover 했을때 .submenu에 CSS 적용
+*/
+
+/* 3. 드랍다운 메뉴2 CSS */
+*{ padding : 0px; margin: 0px;}
+#header2{background-color: skyblue;}
+#header2 > ul{display: flex; justify-content: center;}
+#header2 > ul > li{padding:10px;}
+
+#header2{position:relative;}
+#header2 .submenu2{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    display: none;
+    background-color: skyblue;
+}
+
+#header2 > ul:hover .submenu2{ display:block;}
