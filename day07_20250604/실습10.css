@@ -4,17 +4,23 @@
 }
 li{ list-style-type: none;}
 a{ text-decoration: none;}
-
+/* wrap*/
 #wrap{
     width: 1280px;
     display: flex;
     justify-content: space-between;
     margin: 200px auto;
 }
+/* 본문 */
 #main{
     margin : 50px auto;
 }
 
+/*메인 이미지*/
 .logo > img{ width: 200px;
     
+}
+
+.login .log_id{
+    color: blue;
 }
