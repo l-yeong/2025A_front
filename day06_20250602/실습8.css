@@ -2,9 +2,11 @@
 *{ padding: 0px; margin: 0px; } /* 기본 여백 제거 */
 *{ box-sizing: border-box; } /* 구역 사이즈를 테두리까지 기준 */
 a{ 
+    color : black;
     text-decoration: none; 
 }
 li{ list-style-type: none;}  
+
 
 /*==========헤더==========*/
 #header{
@@ -25,7 +27,11 @@ li{ list-style-type: none;}
 /*=======헤더 메뉴=========*/
 .head-list{
     display: flex;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+#wrap > #header > .head-list >li{
+    margin: 0px 15px;
 }
 
 /*메인 이미지*/
@@ -54,7 +60,7 @@ li{ list-style-type: none;}
     
 
 }
-
+/*메인2 본문*/
 .main-bg{
     width: 1280px;
     margin: 0 auto;
@@ -66,6 +72,9 @@ li{ list-style-type: none;}
     width: 100px;
 }
 
+
+/*푸터*/
+
 #footer{
     width: 1280px;
     height : 150px;
@@ -75,12 +84,28 @@ li{ list-style-type: none;}
     align-items: center;
 }
 
-#info{
+#footer-memu{
+    align-items: center;
+}
+.info{
     display: flex;
     justify-content: flex-start;
-    font-size: 10px;
+    padding-bottom: 10px;
+    font-size:12px;
 }
-#address{
-    font-size:10px;
+.info > li{
+    margin-right: 5px;
 }
 
+.address{
+    font-size : 12px;
+}
+
+
+.icon{
+    display:flex;
+}
+
+.icon > li{
+    margin-right: 10px;
+}
