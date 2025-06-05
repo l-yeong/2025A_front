@@ -1,0 +1,100 @@
+*{ margin : 0px; padding : 0px; }
+*{ box-sizing: border-box;} /* 구역 사이즈기준을 테두리까지*/
+a{text-decoration: none;}
+li{ list-style-type: none;}
+
+#wrap{
+    width: 1430px;
+    margin : 0 auto;
+    border : 1px solid gray;
+    border-radius: 10px;
+    padding: 40px;
+    
+}
+
+#air_content{
+    width:1280px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin : 0 auto;
+}
+/* 항공 예약*/
+
+.package-btn{
+    display: flex;
+}
+.package-btn button[type=button]{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 0;
+    outline: 0;
+}
+.package-btn a{
+    color: gray;
+    font-size: 20px;
+}
+
+/*예약*/
+#cnontent{
+    width:1280px;
+    border: 1px solid gray;
+    
+}
+.start-stop{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+/* 간격 사이 패딩*/
+.start, .stop, .schedule, .people{padding-right: 10px;}
+
+/* 예약 본문 */
+.start [type=button]{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color:  #f7f7f7;
+    color: #999999;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+ .stop [type=button]{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color:  #f7f7f7;
+    color: #999999;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.schedule [type=button]{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #f7f7f7;
+    color: #999999;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.people button[type=button]{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #f7f7f7;
+    color: #999999;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+
+
