@@ -3,16 +3,19 @@
 a{text-decoration: none;}
 li{ list-style-type: none;}
 
-#wrap{
+
+
+#tr_wrap{
     width: 1430px;
-    margin : 0 auto;
+    margin : 30px auto;
     border : 1px solid gray;
     border-radius: 10px;
     padding: 40px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.06);
     
 }
 
-#air_content{
+#tr_air_content{
     width:1280px;
     padding-bottom: 30px;
     display: flex;
@@ -21,80 +24,171 @@ li{ list-style-type: none;}
 }
 /* 항공 예약*/
 
-.package-btn{
+.tr_package-btn{
     display: flex;
 }
-.package-btn button[type=button]{
+.tr_package-btn button[type=button]{
     width: 100px;
     height: 40px;
     background-color: white;
     border: 0;
     outline: 0;
 }
-.package-btn a{
+.tr_package-btn a{
     color: gray;
     font-size: 20px;
 }
 
 /*예약*/
-#cnontent{
+#tr_cnontent{
     width:1280px;
     border: 1px solid gray;
     
 }
-.start-stop{
+.tr_reservations{
     width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
 }
 /* 간격 사이 패딩*/
-.start, .stop, .schedule, .people{padding-right: 10px;}
+.tr_start, .tr_stop, .tr_schedule, .tr_people{padding-right: 10px;}
 
 /* 예약 본문 */
-.start [type=button]{
-    width: 300px;
+.tr_reservations-btn [type=button]{
+    width: 250px;
     height: 50px;
-    font-size: 20px;
-    background-color:  #f7f7f7;
-    color: #999999;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
-}
-
- .stop [type=button]{
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-    background-color:  #f7f7f7;
-    color: #999999;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
-}
-
-.schedule [type=button]{
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
     background-color: #f7f7f7;
-    color: #999999;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.tr_search-btn button[type=button]{
+    width: 250px;
+    height: 100px;
+    background-color: #4154ff;
     border: 0;
     outline: 0;
     border-radius: 10px;
 }
 
-.people button[type=button]{
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-    background-color: #f7f7f7;
-    color: #999999;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
+.tr_reservations a{
+    color:gray;
+    font-size :20px;
+    font-weight:bold;
+}
+
+.tr_search-btn a{
+    color: white
+}
+
+/*메인 아이콘 */
+#tr_icon-wrap{
+    width: 1280px;
+    margin : 0 auto;
+}
+.tr_icon-list{
+    width: 836px;
+    display: flex;
+    margin: 0 auto ;
+}
+/*아이콘 bg 사이즈*/
+.tr_icon-btn{
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+   
+}
+
+.tr_icon-name{
+    text-align: center;
+    font-size: 10px;
+}
+
+.tr_icon-img{
+    text-align: center;
+    background: gray;
+    border-radius: 50px;
+
+    
+}
+
+/* 메인본문 wrap*/
+#tr_main-content-wrap{
+    width: 1280px;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin : 0 auto;
+}
+
+#tr_main-left-wrap{
+    width: 870px;
+}
+#tr_main-right-wrap{
+    width: 380px;
+}
+
+/*특가세일 본문*/
+
+.tr_sale-tour{
+    border : 1px solid gray;
+    border-radius: 15px;
+    margin: 0px 0px 32px;
+    padding: 0px 0px 32px;
+}
+
+.tr_sale-tour-title{
+    padding: 32px 32px 0px;
+}
+.tr_sale-tour-btn{
+    display:flex;
+    justify-content: flex-start;
+    margin : 16px 0px;
+    padding: 0px 32px;
+
 }
 
 
+#tr_sale-content2{
+    display:flex;
+    justify-content: space-between;
+}
+/*본문 버튼 및 a 사이즈*/
+.tr_sale-tour-btn button[type=button]{
+    background-color: white;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    border : 1px solid #29292D;
+    margin: 20px 5px;
+}
 
+.tr_sale-tour a{
+    background-color: white;
+    color: black;
+}
+
+.tr_sale-content-text1{
+    color: #4154ff;
+    font-size:12px;
+    font-weight: bold;
+}
+
+.tr_sale-content-text2{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.tr_sale-content-text3{
+    font-size:13px;
+    color: gray;
+    margin-top : 5px;
+}
+
+.tr_sale-content-price{
+    font-weight: bold;
+    margin-top: 20px;
+}
