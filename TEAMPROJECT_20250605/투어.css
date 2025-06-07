@@ -1,12 +1,13 @@
 *{ margin : 0px; padding : 0px; }
 *{ box-sizing: border-box;} /* 구역 사이즈기준을 테두리까지*/
-a{text-decoration: none;}
+a{text-decoration: none; color: black;}
 li{ list-style-type: none;}
 
 
 
 #tr_wrap{
-    width: 1430px;
+    width: 1240px;
+    height: 200px;
     margin : 30px auto;
     border : 1px solid gray;
     border-radius: 10px;
@@ -56,8 +57,8 @@ li{ list-style-type: none;}
 
 /* 예약 본문 */
 .tr_reservations-btn [type=button]{
-    width: 250px;
-    height: 50px;
+    width: 230px;
+    height: 30px;
     background-color: #f7f7f7;
     border: 0;
     outline: 0;
@@ -66,8 +67,8 @@ li{ list-style-type: none;}
 }
 
 .tr_search-btn button[type=button]{
-    width: 250px;
-    height: 100px;
+    width: 230px;
+    height: 65px;
     background-color: #4154ff;
     border: 0;
     outline: 0;
@@ -86,41 +87,53 @@ li{ list-style-type: none;}
 
 /*메인 아이콘 */
 #tr_icon-wrap{
-    width: 1280px;
-    margin : 0 auto;
+    width: 1240px;
+    height: 110px;
+    margin : 20px auto;
+    
 }
 .tr_icon-list{
-    width: 836px;
+    width: 1240px;
+    height: 90px;
     display: flex;
     margin: 0 auto ;
+    text-align: center;
 }
 /*아이콘 bg 사이즈*/
 .tr_icon-btn{
-    width: 64px;
+    width: 80px;
     height: 64px;
     margin: 0 auto;
-   
 }
+
 
 .tr_icon-name{
     text-align: center;
-    font-size: 10px;
+    font-size: 13px;
 }
-
+.tr_icon-bg{
+    background: rgb(119, 117, 117,0.1);
+    display: flex;
+    justify-content: center;  
+    width: 80px;           
+    height: 80px;           
+    border-radius: 80px;       
+}
 .tr_icon-img{
     text-align: center;
-    background: gray;
-    border-radius: 50px;
-
-    
+    width: 40px;
+    height: 40px; 
 }
+
+
+
 
 /* 메인본문 wrap*/
 #tr_main-content-wrap{
-    width: 1280px;
+    width: 1240px;
     height: 800px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin : 0 auto;
 }
 
@@ -131,13 +144,17 @@ li{ list-style-type: none;}
     width: 380px;
 }
 
-/*특가세일 본문*/
+/*특가 여행 본문*/
 
 .tr_sale-tour{
     border : 1px solid gray;
     border-radius: 15px;
     margin: 0px 0px 32px;
     padding: 0px 0px 32px;
+}
+
+.tr_sale-content-list{
+    width: 200px;
 }
 
 .tr_sale-tour-title{
@@ -154,15 +171,15 @@ li{ list-style-type: none;}
 
 #tr_sale-content2{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-/*본문 버튼 및 a 사이즈*/
+/*마감임박! 버튼*/
 .tr_sale-tour-btn button[type=button]{
     background-color: white;
     border-radius: 30px;
     width: 100px;
     height: 40px;
-    border : 1px solid #29292D;
+    border : 1px solid rgb(119, 117, 117,0.2);
     margin: 20px 5px;
 }
 
@@ -171,6 +188,15 @@ li{ list-style-type: none;}
     color: black;
 }
 
+
+/* 마감 임박 본문*/
+
+.tr_sale_content-img-size{
+    width: 180px;
+    height: 130px;
+    border-radius: 15px;
+    margin : 0px 10px;
+}
 .tr_sale-content-text1{
     color: #4154ff;
     font-size:12px;
@@ -192,3 +218,4 @@ li{ list-style-type: none;}
     font-weight: bold;
     margin-top: 20px;
 }
+
