@@ -262,7 +262,7 @@ li {
 /* 간격 사이 패딩*/
 .tr_start, .tr_stop, .tr_schedule, .tr_people{padding-right: 10px;}
 
-/* =========출발지/도착지  CSS========== */
+/* ====================출발지/도착지  CSS====================== */
 .tr_reservations-btn [type=button]{
     width: 230px;
     height: 30px;
@@ -273,23 +273,34 @@ li {
     margin-right: 5px;
 }
 
-.tr_search-btn button[type=button]{
-    width: 230px;
-    height: 65px;
-    background-color: #4154ff;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
-}
-
 .tr_reservations a{
     color:gray;
     font-size :20px;
     font-weight:bold;
 }
 
+.tr_search-btn-bg{
+    width: 180px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #4154ff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tr_search-img{
+    width:25px;
+}
+
+.tr_search-btn p{
+    padding-right:20px;
+}
+
 .tr_search-btn a{
-    color: white
+    color: white;
+    font-size: 17px;
+
 }
 
 /* ==========항공 해외숙소 국내숙소 투어/입장권 국내놀거리 버튼============ CSS */
@@ -351,7 +362,7 @@ li {
 #tr_main-right-wrap{
     width: 380px;
 }
-
+/*===================마감임박 테두리 =====================*/
 .tr_sale-tour{
     border : 1px solid rgba(119, 117, 117,0.2);
     border-radius: 15px;
@@ -365,11 +376,14 @@ li {
 
 .tr_sale-tour-title{
     padding: 32px 32px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
 }
+
 .tr_sale-tour-btn{
     display:flex;
     justify-content: flex-start;
-    margin : 16px 0px;
     padding: 0px 15px;
 
 }
@@ -394,7 +408,7 @@ li {
 }
 
 
-/* ================마감 임박 본문=================*/
+/* ================마감임박! 본문=================*/
 
 .tr_sale_content-img-size{
     width: 180px;
@@ -441,9 +455,105 @@ li {
   width: 45%; 
 }
 
-.tr_advertisement-img {
-  width: 100%;
-  display: block;
-  border-radius: 20px;
+.tr_advertisement-img{
+    width: 400px;
 }
 
+/*==============놀라운 가격 금액대별 항공권 비교 테두리 ============*/
+
+#tr_air-price-sale{
+    border : 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 15px;
+    margin: 0px 0px 32px;
+    padding: 0px 0px 32px;
+}
+
+.tr_air-price-sale-title{
+    padding: 32px 32px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tr_air-price-sale-btn{
+    display:flex;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+.tr_sale-content-list{
+    width: 200px;
+}
+
+/*==========놀라운 가격 금액대별 항공권 비교 버튼======================*/
+
+.tr_air-price-sale-btn button[type=button]{
+    background-color: white;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    border : 1px solid rgb(119, 117, 117,0.2);
+    margin: 20px 5px;
+}
+
+.tr_air-price-sale-btn a{
+    background-color: white;
+    color: black;
+}
+
+
+/*=================놀라운 가격 금액대별 항공권 비교 본문 ==================*/
+.tr_air-price-sale-select-wrap{
+    display: flex;
+    height: 192px;
+}
+
+.tr_air-price-sale-select{
+    width : 180px;
+    border : 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 15px;
+    margin-left: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.tr_air-price-sale-text1{
+    font-size:15px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.tr_air-price-sale-text2{
+    font-size:14px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.tr_air-price-sale-text3{
+    font-size:14px;
+    margin-top : 5px;
+    padding-left: 10px;
+}
+
+.tr_air-price-sale-price{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.tr_air-price-sale-text5{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size:12px;
+    
+}
+
+.tr_air-price-sale-text2-3{
+    color: gray;
+}
+
+.tr_air-price-sale-coupon{
+    color:red;
+    background-color: rgba(255, 50, 46, 0.1);
+}
