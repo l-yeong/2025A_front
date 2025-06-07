@@ -8,6 +8,45 @@
 </head>
 
 <body>
+        <div id="wrap"> <!-- wrap -->
+
+        <div id="header_area"> <!-- header_area : header 하단/main 사이 border bottom 때문에 -->
+            <div id="header"> <!-- header -->
+                <div id="top_header"> <!--logo, search etc-->
+                    <a href="#" class="header_logo"></a>
+                    <form class="header_search">
+                        <input type="text" placeholder="인기 공연 타임딜 & 혜택 모음" />
+                        <a href="#"></a>
+                    </form>
+                    <a href="#" class="header_ad"></a>
+                    <div>
+                        <a href="#"></a>
+                        <span>|</span>
+                        <a href="#"></a>
+                        <span>|</span>
+                        <a href="#"></a></li>
+                    </div>
+                </div>
+
+                <div id="bottom_menu"> <!--홈, 투어, 티켓, 로그인, 내 예약-->
+                    <ul class="main_menu">
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">투어</a></li>
+                        <li><a href="#">티켓</a></li>
+                    </ul>
+                    <div class="my_menu">
+                        <a href="#">
+                            <div></div><span>로그인</span>
+                        </a>
+                        <div></div>
+                        <a href="#">
+                            <div></div><span>내 예약</span>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- header end -->
+        </div> <!-- header_area end-->
+    <!--===============본문 시작========================-->
     <div id="tr_wrap"> <!-- 항공 해외숙소 wrap-->
         <div id="tr_air_content"> <!-- 항공 -->
             <div class="tr_test"> <!-- 패키지 버튼-->
@@ -130,6 +169,7 @@
             </ul>
         </div>
     </div> <!-- 메인 아이콘 wrap end-->
+    <!---------------------------------------------------------------->
     <div id="tr_main-content-wrap"> <!-- 본문 wrap-->
         <div id="tr_main-left-wrap"> <!-- 왼쪽 본문 wrap-->
             <div class="tr_sale-tour"><!-- 특가 여행 추천-->
@@ -148,47 +188,50 @@
                 <div id="tr_sale-content"><!-- 특가 본문 -->
                     <div id="tr_sale-content2">
                         <ul class="tr_sale-content-list">
-                            <li>
-                                <a href="#">
-                                <li class="tr_sale_content-img"><img class="tr_sale_content-img-size" src="img/특가추천/saint.jpg"></li>
-                                <li class="tr_sale-content-text1">슈페리어 할리우드</li>
-                                <li class="tr_sale-content-text2">강릉 세인트존스 호텔<br /><br /></li>
-                                <li class="tr_sale-content-text3">강원</li>
-                                <li class="tr_sale-content-price">107,800원~</li>
-                                </a>
-                            </li>
+                            <a href="#">
+                            <li class="tr_sale_content-img"><img class="tr_sale_content-img-size" src="img/특가추천/saint.jpg"></li>
+                            <li class="tr_sale-content-text1">슈페리어 할리우드</li>
+                            <li class="tr_sale-content-text2">강릉 세인트존스 호텔<br /><br /></li>
+                            <li class="tr_sale-content-text3">강원</li>
+                            <li class="tr_sale-content-price">107,800원~</li>
+                            </a>
                         </ul>
                         <ul class="tr_sale-content-list">
+                            <a href="#">
                             <li class="tr_sale_content-img"><img class="tr_sale_content-img-size" src="img/특가추천/danang.jpeg"></li>
                             <li class="tr_sale-content-text1">바나힐 자율 관광</li>
                             <li class="tr_sale-content-text2">[맛있다낭] 다낭/호이안/바나힐/BBQ플래터+호텔...</li>
                             <li class="tr_sale-content-text3">다낭/호이안</li>
                             <li class="tr_sale-content-price">269,900원~</li>
+                            </a>
                         </ul>
                         <ul class="tr_sale-content-list">
+                            <a href="#">
                             <li class="tr_sale_content-img"><img class="tr_sale_content-img-size" src="img/특가추천/jaypark.jpeg"></li>
                             <li class="tr_sale-content-text1">[업그레이드 무료 룸 업그레이드]</li>
                             <li class="tr_sale-content-text2">제이파크 아일랜드 리조트&워터파크</li>
                             <li class="tr_sale-content-text3">세부</li>
                             <li class="tr_sale-content-price">261,633원~</li>
+                            </a>
                         </ul>
                         <ul class="tr_sale-content-list">
+                            <a href="#">
                             <li class="tr_sale_content-img"><img class="tr_sale_content-img-size" src="img/특가추천/italia.jpg"></li>
                             <li class="tr_sale-content-text1">신규 취향 특가</li>
                             <li class="tr_sale-content-text2">[이탈리아일주 9일] 토스카나 평원 | 남부투어 | 일급...</li>
                             <li class="tr_sale-content-text3">이탈리아</li>
                             <li class="tr_sale-content-price">2,299,000원~</li>
+                            </a>
                         </ul>
-                    </div>
-                    <div > <!-- 광고 -->
-
                     </div>
                 </div>
             </div><!-- 특가 여행 추천 end-->
-
-
-        </div>
-    </div>
+            <div id="tr_advertisement">
+                    <button class="tr_advertisement-button-left" type="button" img src="img/특가추천/left_arrow.png"></button>
+                    <a href="#"><img class="tr_advertisement-img" src="img/광고/abvertisement1.png"/></a>
+                    <a href="#"><img class="tr_advertisement-img" src="img/광고/abvertisement2.jpg"/></a>
+            </div>
+        </div><!--왼쪽 본문 WRAP END-->
     <div id="tr_main-right-wrap"><!-- 오른쪽 본문 wrap-->
 
     </div>
