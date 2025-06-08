@@ -567,6 +567,7 @@ li {
     border-radius: 20px;
     background-color: rgb(243, 246, 248);
     height: 84px;
+    margin-bottom: 10px;
 }
 
 .tr_right-advertisement-img{
@@ -602,4 +603,115 @@ li {
     text-align: center;
     margin-top: 40px;
     
+}
+
+/*==========당신을 위한 여행 혜택 비교===============*/
+#tr_you-benefit-wrap{
+    border: 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 20px;
+    margin: 0px 0px 12px;
+    padding: 0px 0px 20px;
+}
+.tr_you-benefit-content{
+    display:flex;
+}
+
+.tr_you-benefit-title{
+    font-size:20px;
+    font-weight: bold;
+    margin: 0px 0px 20px;
+    padding: 28px 28px 0px;
+}
+.tr_you-benefit-img{
+    width: 50px;
+    margin-left: 30px;
+}
+.tr_you-benefit-text1{
+    font-size:16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.tr_you-benefit-text2 a{
+    font-size:14px;
+    color:gray;
+    margin-left: 5px;
+}
+
+#tr_you-benefit-btn{
+    display:flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+
+}
+#tr_you-benefit-btn button[type=button]{
+    width: 15px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid rgba(119, 117, 117,0.2);
+    outline: 0;
+    
+}
+#tr_you-benefit-btn img{
+    width:15px;
+}
+
+#tr_you-benefit-btn p{
+    font-size:13px;
+    font-weight: bold;
+    color:gray;
+    margin: 0px 30px;
+}
+#tr_you-benefit-btn span{
+    color: black;
+}
+
+/*================새로운 여행===================*/
+
+#tr_new-tour-wrap{
+    border: 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 20px;
+    margin: 0px 0px 12px;
+    padding: 0px 0px 20px;
+}
+
+.tr_new-tour-title{
+    font-size:20px;
+    font-weight: bold;
+    margin: 0px 0px 20px;
+    padding: 28px 28px 0px;
+}
+
+.tr_new-tour-content > a > img{
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+#tr_new-tour-btn img{
+    width:15px;
+}
+#tr_new-tour-btn button[type=button]{
+    width: 15px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid rgba(119, 117, 117,0.2);
+    outline: 0;
+    
+}
+
+#tr_new-tour-btn{
+    display:flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+
+#tr_new-tour-btn p{
+    font-size:13px;
+    font-weight: bold;
+    color:gray;
+    margin: 0px 30px;
+}
+#tr_new-tour-btn span{
+    color: black;
 }
