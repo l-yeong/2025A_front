@@ -347,7 +347,7 @@ li {
 
 
 
-/* ===========왼쪽 본문 WRAP 시작================= */
+/* ==========================왼쪽 본문 WRAP 시작================================ */
 #tr_main-content-wrap{
     width: 1240px;
     height: 1600px;
@@ -357,10 +357,10 @@ li {
 }
 
 #tr_main-left-wrap{
-    width: 850px;
-}
+    width: 850px; /* 왼쪽 본문 사이즈*/
+} 
 #tr_main-right-wrap{
-    width: 360px;
+    width: 360px; /* 오른쪽 본문 사이즈*/
 }
 /*===================마감임박 테두리 =====================*/
 .tr_sale-tour{
@@ -512,7 +512,7 @@ li {
     width : 180px;
     border : 1px solid rgba(119, 117, 117,0.2);
     border-radius: 15px;
-    margin-left: 30px;
+    margin-left: 20px;
     padding-top: 15px;
     padding-left: 20px;
 }
@@ -557,7 +557,80 @@ li {
     color:red;
     background-color: rgba(255, 50, 46, 0.1);
 }
+/*=============요즘 가기 좋은 국내 추천==================*/
+.tr_internal-tour{
+    border : 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 15px;
+    margin: 0px 0px 32px;
+    padding: 0px 0px 32px;
+}
 
+.tr_internal-tour-title{
+    padding: 32px 32px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tr_internal-content-list{
+    width: 200px;
+}
+
+
+.tr_internal-tour-btn{
+    display:flex;
+    justify-content: flex-start;
+    padding: 0px 15px;
+
+}
+
+#tr_internal-content2{
+    display:flex;
+    justify-content: space-evenly;
+}
+/*========== 요즘 가기 좋은 국내 여행 추천 버튼======================*/
+.tr_internal-tour-btn button[type=button]{
+    background-color: white;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    border : 1px solid rgb(119, 117, 117,0.2);
+    margin: 20px 5px;
+}
+
+/* ================요즘 가기 좋은 국내 여행 추천 본문=================*/
+
+.tr_internal_content-img-size{
+    width: 147px;
+    height: 147px;
+    border-radius: 15px;
+    margin : 0px 10px;
+}
+
+.tr_internal-content-text2{
+    font-weight: bold;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.tr_internal-content-text3{
+    font-size:13px;
+    color: gray;
+    margin-top : 5px;
+    padding-left: 5px;
+}
+
+.tr_internal-content-price{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.tr_internal-content-price span {
+    color: red;
+    margin-right: 5px;
+}
+
+/*============================오른쪽 시작 본문==========================*/
 /*=============오른쪽 광고===============*/
 
 #tr_right-advertisement-wrap{
