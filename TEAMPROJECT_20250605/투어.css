@@ -350,7 +350,7 @@ li {
 /* ==========================왼쪽 본문 WRAP 시작================================ */
 #tr_main-content-wrap{
     width: 1240px;
-    height: 1600px;
+    height: 3000px;
     display: flex;
     justify-content: space-between;
     margin : 0 auto;
@@ -629,6 +629,57 @@ li {
     color: red;
     margin-right: 5px;
 }
+/*요즘 가기 좋은 국내 여행 추천 본문 */
+#tr_now-tour-wrap{
+    border : 1px solid rgba(119, 117, 117,0.2);
+    height: 274px;
+    border-radius: 20px;
+    margin: 0px 0px 20px;
+    padding: 32px;
+}
+
+#tr_now-tour{
+    display:flex;
+    justify-content: space-between;
+}
+.tr_now-tour-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tr_now-tour-title p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#tr_now-tour a{
+    font-size: 14px;
+    color: #29292d80;
+}
+
+
+
+.tr_now-tour-content-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 0px;
+}
+
+.tr_now-tour-img{
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    border:none;
+}
+.tr_now-tour-content a{
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    border:none;
+    text-align: center;
+}
+
 
 /*============================오른쪽 시작 본문==========================*/
 /*=============오른쪽 광고===============*/
