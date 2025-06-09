@@ -217,21 +217,21 @@ li {
 /*================본문 시작=======================*/
 #tr_wrap{
     width: 1240px;
-    height: 200px;
-    margin : 30px auto;
+    height: 176px;
+    margin : 10px auto;
     border : 1px solid rgba(119, 117, 117,0.2);
-    border-radius: 10px;
-    padding: 40px;
+    border-radius: 20px;
+    padding: 20px 10px 0px ;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.06);
     
 }
 
 #tr_air_content{
     width:1280px;
-    padding-bottom: 30px;
     display: flex;
     align-items: center;
-    margin : 0 auto;
+    
+
 }
 /* 항공 예약*/
 
@@ -247,7 +247,9 @@ li {
 }
 .tr_package-btn a{
     color: gray;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    
 }
 
 /*예약*/
@@ -276,10 +278,25 @@ li {
     margin-right: 5px;
 }
 
-.tr_reservations a{
+
+.tr_reservations-text1{
     color:gray;
-    font-size :20px;
+    font-size :12px;
     font-weight:bold;
+    padding-right: 130px;
+}
+.tr_reservations-text2{
+    color:black;
+    font-size :15px;
+    font-weight:bold;
+    padding-right: 130px;
+}
+
+.tr_reservations-text3{
+    color: gray;
+    font-size :15px;
+    font-weight:bold;
+    padding-right: 130px;
 }
 
 .tr_search-btn-bg{
@@ -298,6 +315,7 @@ li {
 
 .tr_search-btn p{
     padding-right:20px;
+    font-size: 16px;;
 }
 
 .tr_search-btn a{
@@ -353,7 +371,7 @@ li {
 /* ==========================왼쪽 본문 WRAP 시작================================ */
 #tr_main-content-wrap{
     width: 1240px;
-    height: 4000px;
+    height: 3205px;
     display: flex;
     justify-content: space-between;
     margin : 0 auto;
@@ -476,7 +494,7 @@ li {
     padding: 0px 0px 32px;
 }
 
-.tr_air-price-sale-title{
+.tr_air-price-sale-title p{
     padding: 32px 32px 0px;
     font-size: 20px;
     font-weight: bold;
@@ -505,6 +523,7 @@ li {
 }
 
 .tr_air-price-sale-btn a{
+    font-size: 14px;
     background-color: white;
     color: black;
 }
@@ -525,28 +544,29 @@ li {
     padding-left: 20px;
 }
 
-.tr_air-price-sale-text1{
+.tr_air-price-sale-text1 a{
     font-size:15px;
     font-weight: bold;
     padding-left: 10px;
 }
 
-.tr_air-price-sale-text2{
+.tr_air-price-sale-text2 a{
     font-size:14px;
     margin-top: 5px;
     padding-left: 10px;
 }
 
-.tr_air-price-sale-text3{
+.tr_air-price-sale-text3 a{ 
     font-size:14px;
     margin-top : 5px;
     padding-left: 10px;
 }
 
-.tr_air-price-sale-price{
+.tr_air-price-sale-price a{
     font-weight: bold;
     margin-top: 20px;
     padding-left: 10px;
+    font-size: 15px;
 }
 
 .tr_air-price-sale-text5{
@@ -564,6 +584,7 @@ li {
 .tr_air-price-sale-coupon{
     color:red;
     background-color: rgba(255, 50, 46, 0.1);
+    font-size: 12px;
 }
 /*=============요즘 가기 좋은 국내 추천==================*/
 .tr_internal-tour{
@@ -573,7 +594,7 @@ li {
     padding: 0px 0px 32px;
 }
 
-.tr_internal-tour-title{
+.tr_internal-tour-title p{
     padding: 32px 32px 0px;
     font-size: 20px;
     font-weight: bold;
@@ -583,7 +604,9 @@ li {
 .tr_internal-content-list{
     width: 200px;
 }
-
+.tr_internal-tour-btn a{
+    font-size: 14px;
+}
 
 .tr_internal-tour-btn{
     display:flex;
@@ -615,23 +638,25 @@ li {
     margin : 0px 10px;
 }
 
-.tr_internal-content-text2{
+.tr_internal-content-text2 {
     font-weight: bold;
     margin-top: 5px;
     padding-left: 5px;
+    font-size: 16px;
 }
 
-.tr_internal-content-text3{
+.tr_internal-content-text3 {
     font-size:13px;
     color: gray;
     margin-top : 5px;
     padding-left: 5px;
 }
 
-.tr_internal-content-price{
+.tr_internal-content-price {
     font-weight: bold;
     margin-top: 20px;
     padding-left: 10px;
+    font-size:16px;
 }
 .tr_internal-content-price span {
     color: red;
@@ -677,6 +702,9 @@ li {
     margin: 20px 0px 0px;
 }
 
+.tr_now-tour-content-list p{
+    font-size: 16px;
+}
 .tr_now-tour-img{
     width: 96px;
     height: 96px;
@@ -699,7 +727,7 @@ li {
     padding: 0px 0px 32px;
 }
 
-.tr_sale-package-title{
+.tr_sale-package-title p{
     padding: 32px 32px 0px;
     font-size: 20px;
     font-weight: bold;
@@ -721,6 +749,10 @@ li {
     justify-content: flex-start;
     padding: 0px 15px;
 
+}
+
+.tr_sale-package-btn a{
+    font-size: 14px;
 }
 
 .tr_package-btn2{
@@ -752,17 +784,17 @@ li {
     margin-right: 10px;
 }
 
-.tr_sale-package-text1{
-    font-size: 14px;
+.tr_sale-package-text1 p{
+    font-size: 15px;
     font-weight: bold;
 }
 
-.tr_sale-package-text2{
+.tr_sale-package-text2 p{
     color : rgb(65, 84, 255);
-    font-size:12px;
+    font-size:13px;
 }
-.tr_sale-package-text3{
-    font-size: 14px;
+.tr_sale-package-text3 p{
+    font-size: 15px;
     font-weight: bold;
 }
 /*=================윗본문====== 땡처리 항공권이 곧 마감됩니다.=====================*/
@@ -834,15 +866,15 @@ li {
     width: 370px;
     height: 47px;
 }
-.tr_airticket-place{
+.tr_airticket-place p{
     font-size: 16px;
     font-weight: bold;
 }
-.tr_airticket-date{
+.tr_airticket-date p{
     font-size: 14px;
     color:rgba(41, 41, 45, 0.5);
 }
-.tr_airticket-price{
+.tr_airticket-price p{
     font-size:16px;
     font-weight: bold;
 }
@@ -867,7 +899,10 @@ li {
 /* 2-5. 인터파크 LIVE */
 
 .tr_IPLive {
-    padding: 30px 0px 60px 0px;
+    margin: 30px 0px 60px;
+    padding: 32px;
+    border : 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 20px;
 }
 
 .tr_IPLive>div:nth-child(1) {
@@ -879,6 +914,24 @@ li {
     background-size: contain;
     margin: 0 auto;
     margin-bottom: 30px;
+}
+
+#tr_IPLive_title {
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+}
+#tr_IPLive_title p {
+    font-size:20px;
+    font-weight: bold;
+}
+#tr_IPLive_title a{
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    display: flex;
+    align-items: center;
+    
 }
 
 .tr_IPLive>ul {
@@ -904,8 +957,8 @@ li {
 .tr_liveList_info>div:nth-child(1) {
     margin: 20px 20px 8px 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 7px 0px;
-    width: 70px;
+    width: 81px;
+    height: 20px;
     text-align: center;
     font-weight: bold;
     border-radius: 20px;
@@ -915,20 +968,20 @@ li {
 
 .tr_liveList_info>div:nth-child(2) {
     margin: 0px 20px 0px 20px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .tr_liveList_info>div:nth-child(3) {
-    margin: 60px 20px 0px 20px;
-    font-size: 30px;
+    margin: 20px 20px 0px 20px;
+    font-size: 20px;
     font-weight: 300;
     text-align: center;
 }
 
 .tr_liveList_info>div:nth-child(4) {
     margin: -10px 20px 0px 20px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
@@ -1022,7 +1075,7 @@ li {
     display:flex;
 }
 
-.tr_you-benefit-title{
+.tr_you-benefit-title p{
     font-size:20px;
     font-weight: bold;
     margin: 0px 0px 20px;
@@ -1032,7 +1085,7 @@ li {
     width: 50px;
     margin-left: 30px;
 }
-.tr_you-benefit-text1{
+.tr_you-benefit-text1 a{
     font-size:16px;
     font-weight: bold;
     margin-left: 5px;
@@ -1079,9 +1132,12 @@ li {
     border-radius: 20px;
     margin: 0px 0px 12px;
     padding: 0px 0px 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
-.tr_new-tour-title{
+.tr_new-tour-title p{
     font-size:20px;
     font-weight: bold;
     margin: 0px 0px 20px;
@@ -1121,7 +1177,51 @@ li {
 #tr_new-tour-btn span{
     color: black;
 }
+/* =============NOL 인터파크투어 단독 혜택==================*/
+#tr_nol-interpark-wrap{
+    border: 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 20px;
+    margin: 0px 0px 12px;
+    padding: 0px 0px 20px;
+    position: sticky;
+    top: 320px;
+    z-index: 9;
+    
+    
+}
+.tr_nol-interpark-content{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:  0px 0px 12px;
+    width: 300px;
+    height: 68px;
+}
 
+.tr_nol-interpark-title p{ 
+    font-size:20px;
+    font-weight: bold;
+    margin: 0px 0px 20px;
+    padding: 28px 28px 0px;
+}
+.tr_nol-interpark-img{
+    width: 50px;
+    margin-left: 30px;
+}
+.tr_nol-interpark-img2{
+    width: 13px;
+    margin-left: 18px;
+}
+.tr_nol-interpark-text1 a{
+    font-size:16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.tr_nol-interpark-text2 a{
+    font-size:14px;
+    color:gray;
+    margin-left: 5px;
+}
 /*==========================푸터===================================*/
 #footer {
     background-color: #ffffff;
