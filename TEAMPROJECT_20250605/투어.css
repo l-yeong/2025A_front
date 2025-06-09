@@ -682,8 +682,38 @@ li {
     border:none;
     text-align: center;
 }
+/*=====================비교할수록 매력적인 초특가 패키지 여행=============*/
+.tr_sale-package{
+    border : 1px solid rgba(119, 117, 117,0.2);
+    border-radius: 15px;
+    margin: 0px 0px 32px;
+    padding: 0px 0px 32px;
+}
+
+.tr_sale-package-title{
+    padding: 32px 32px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
 
 
+.tr_sale-package-btn{
+    display:flex;
+    justify-content: flex-start;
+    padding: 0px 15px;
+
+}
+
+/*========== 요즘 가기 좋은 국내 여행 추천 버튼======================*/
+.tr_sale-package-btn button[type=button]{
+    background-color: white;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    border : 1px solid rgb(119, 117, 117,0.2);
+    margin: 20px 5px;
+}
 /*============================오른쪽 시작 본문==========================*/
 /*=============오른쪽 광고===============*/
 

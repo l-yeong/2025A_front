@@ -23,3 +23,10 @@ console.log(result1) // 사용자 확인 클릭시 true 출력, 취소 클릭시
 //2. let 변수명 * prompt();
 let result2 =prompt ("사용자 전화번호 입력해주세요.")
 console.log(result2)
+
+/*
+다람쥐가 도토리 보관하기 위해 변수를 활용한다.confirm
+
+let 몇개 =4
+let 어디에 = "도토리필드"
+*/
