@@ -684,6 +684,7 @@ li {
 }
 /*=====================비교할수록 매력적인 초특가 패키지 여행=============*/
 .tr_sale-package{
+    
     border : 1px solid rgba(119, 117, 117,0.2);
     border-radius: 15px;
     margin: 0px 0px 32px;
@@ -697,14 +698,6 @@ li {
     text-align: left;
 }
 
-
-.tr_sale-package-btn{
-    display:flex;
-    justify-content: flex-start;
-    padding: 0px 15px;
-
-}
-
 /*========== 요즘 가기 좋은 국내 여행 추천 버튼======================*/
 .tr_sale-package-btn button[type=button]{
     background-color: white;
@@ -714,7 +707,127 @@ li {
     border : 1px solid rgb(119, 117, 117,0.2);
     margin: 20px 5px;
 }
+
+.tr_sale-package-btn{
+    display:flex;
+    justify-content: flex-start;
+    padding: 0px 15px;
+
+}
+
+.tr_package-btn2{
+    font-size: 14px;
+    font-weight: bold;
+    width: 786px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    margin-left: 30px;
+}
+
+/*========== 요즘 가기 좋은 국내 여행 추천 본문 ======================*/
+.tr_sale-package-content{
+    display: grid;
+    grid-template-columns:420px 420px;
+    flex-direction:column;
+}
+.tr_sale-package-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 32px 20px;
+}
+
+.tr_sale-package-img{
+    width: 80px;
+    height: 104px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.tr_sale-package-text1{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tr_sale-package-text2{
+    color : rgb(65, 84, 255);
+    font-size:12px;
+}
+.tr_sale-package-text3{
+    font-size: 14px;
+    font-weight: bold;
+}
+/*=================윗본문====== 땡처리 항공권이 곧 마감됩니다.=====================*/
+#tr_airticket-meaning{
+    width: 850px;
+    height: 220px;
+    border : 1px solid rgba(119, 117, 117,0.2);
+    background-color: rgb(23, 105, 255);
+    border-radius: 15px;
+    padding: 44px 22px 0px;
+    background-image: url(img/땡처리마감/tr_airticket-meaning_bg.png);
+    background-position-x :50%;
+    background-position-y :50%;
+    background-repeat :repeat;
+    border-image-repeat :stretch;
+    background-size : auto;
+    
+}
+#tr_airticket-meaning h2{
+    padding: 0px 0px 4px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+}
+#tr_airticket-meaning h3{
+    padding: 0px 0px 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+}
+#tr_airticket-meaning p{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+}
+/*=====================아랫본문====땡처리 항공권 곧 마감 됩니다==================*/
+
+#tr_airticket-meaning-content{
+    padding : 8px 32px 28px;
+    width: 853px;
+    height: 332px;
+}
+
+.tr_airticket1{
+    display: grid;
+    grid-template-columns:420px 420px;
+    flex-direction:column;
+    width: 370px;
+    height: 47px;
+}
+.tr_airticket-place{
+    font-size: 16px;
+    font-weight: bold;
+}
+.tr_airticket-date{
+    font-size: 14px;
+    color:rgba(41, 41, 45, 0.5);
+}
+.tr_airticket-price{
+    font-size:16px;
+    font-weight: bold;
+}
+.tr_airticket-img{
+    width: 24px;
+    height: 24px;
+}
 /*============================오른쪽 시작 본문==========================*/
+
+
 /*=============오른쪽 광고===============*/
 
 #tr_right-advertisement-wrap{
