@@ -51,6 +51,10 @@ a{
     border-radius: 15px;
     width: 60px;
 }
+.tk_main_img02 > li > img:hover{
+    width: 80px;
+    height: 80px;
+}
 .tk_sub_image{
     width: 1280px;
     margin: 20px auto;
@@ -443,7 +447,7 @@ a{
     color: gray;
 }
 #tk_bottom_image{
-    background-image: url("./01_img/대형이미지2.svg");
+    background-image: url("./01_img.folder/image11.svg");
     height: 100px;
     background-repeat: no-repeat;
     width: 1280px;
@@ -548,7 +552,7 @@ a{
     background-color: rgba(255, 255, 255, 0.6);
     width: 60px;
     height: 60px;
-    background-image: url(./01_img/slide_arrow.svg);
+    background-image: url(./01_img.folder/slide_arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
