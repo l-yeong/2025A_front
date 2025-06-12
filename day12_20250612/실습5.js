@@ -184,9 +184,23 @@ let carArray = [ '250어7142', '142가7415', '888호8888' ];
 let locationArray = [ 'A1', 'B3', 'C2' ];
 
 let carSearch = ( prompt('차량검색 : ') )
-if( carArray.indexOf(carSearch) == -1){
+if( carArray.indexOf(carSearch) == -1 && locationArray.indexOf(0) ==-1){
+    console.log(`${carArray[carSearch]}차량의 위치는${ locationArray[carSearch] }`);
     
 }
+else{
+    console.log(`차량이 존재하지 않습니다.`);
+}
+
+
+
+
+
+
+
+
+
+
 
 // 문제 10: 수강 신청 목록에서 과목 제외하기
 // 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
