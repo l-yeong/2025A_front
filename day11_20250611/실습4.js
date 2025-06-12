@@ -53,8 +53,12 @@ let 이벤트나이=Number(prompt("나이 입력:"));
 console.log(`발표: ${대상}`);
 */
 
-//[문제8] 뭔말인지 잘 모름
-
+//[문제8]
+/*
+let likeCount = 3;
+likeCount++
+console.log(`좋아요:[${likeCount}]`)
+*/
 //[문제9]
 /*
 let todoList =["장보기","과제하기"];
@@ -66,14 +70,8 @@ console.log(todoList); //배열 전체 요소 출력
 //[문제10]
 /*
 let waitingList=['김민준','이서연','박도윤','최지우'];
-console.log(waitingList[0])
-console.log(waitingList[1])
-console.log(waitingList[2])
-console.log(waitingList[3])
-console.log(waitingList[4])
+waitingList[3] = "김이름";
+console.log(waitingList.indexOf([3]));
 
-waitingList = ["최지우","박도윤"];
-console.log(waitingList);
-console.log(waitingList.indexOf('최지우'));
-
+console.log(`마지막 대기자[${waitingList[3]}] 입니다.`);
 */
