@@ -88,9 +88,9 @@
 // 출력 예시: '2024년은 윤년입니다.' 또는 '2023년은 평년입니다.'
 
 //[문제6]
-/* 다시보기
+/*
 let year=Number(prompt("연도 입력:"));
-if((year%4 == 0  &&  400 > 0)  ){
+if((year%4 == 0  &&  400 > 0) && 100 != 0  ){
     console.log(`${year}"년은 윤년 입니다."`);
 }else{(console.log(`${year}"년은 평년 입니다."`))}
 */
@@ -196,15 +196,20 @@ if((year%4 == 0  &&  400 > 0)  ){
 
 
 //[문제10]
-// let course=prompt("과목명 :");
-// let courseList = ['수학', '영어', '과학', '국어'];
+let course=prompt("과목명 :");
+let courseList = ['수학', '영어', '과학', '국어'];
 
 
-// if(courseList.indexOf(course) == courseList){
-//     courseList.splice[course];
-//     console.log(courseList);
-// }else{
-//     console.log("이미 해당 과목은 신청 목록에 없습니다.");
-// }
+if(courseList.indexOf(course) == courseList){
+    courseList.splice[course];
+    console.log(courseList);
+}else{
+    console.log("이미 해당 과목은 신청 목록에 없습니다.");
+}
 
-//문제6,10,11
+
+
+
+
+
+//문제10,11
