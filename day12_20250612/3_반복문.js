@@ -36,6 +36,9 @@ for(let plus=0; plus<=50; plus++){
 
 // 문제 5: 짝수만 출력하기
 // for 반복문과 if 조건문을 사용하여, 1부터 20까지의 숫자 중 짝수만 콘솔에 출력하시오.
-for(let JJ=0; JJ<=20; JJ+=2){
-    console.log(JJ);
+for(let JJ=0; JJ<=20; JJ++){
+    if(JJ%2 == 0){
+        console.log(JJ)
+    }else{("없음")}
+    
 }

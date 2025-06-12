@@ -180,14 +180,13 @@ if((year%4 == 0  &&  400 > 0) && 100 != 0  ){
 // 주차 위치 목록: let locationArray = [ 'A1', 'B3', 'C2' ];
 // 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오. 만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.
 //[문제9]
-// let carArray = [ '250어7142', '142가7415', '888호8888' ];
-// let locationArray = [ 'A1', 'B3', 'C2' ];
+let carArray = [ '250어7142', '142가7415', '888호8888' ];
+let locationArray = [ 'A1', 'B3', 'C2' ];
 
-// let carSearch =prompt(" 차량 번호 입력 : ");
-
-// if(carArray.indexOf(carSearch)==locationArray [1]){
-//     console.log(`${carArray}차량 위치는 ${locationArray} 입니다.`)
-// }else{("차량이 없습니다.")}
+let carSearch = ( prompt('차량검색 : ') )
+if( carArray.indexOf(carSearch) == -1){
+    
+}
 
 // 문제 10: 수강 신청 목록에서 과목 제외하기
 // 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
@@ -196,20 +195,15 @@ if((year%4 == 0  &&  400 > 0) && 100 != 0  ){
 
 
 //[문제10]
+/*
 let course=prompt("과목명 :");
 let courseList = ['수학', '영어', '과학', '국어'];
 
-
-if(courseList.indexOf(course) == courseList){
-    courseList.splice[course];
-    console.log(courseList);
-}else{
+if(courseList.indexOf(course) == -1){
     console.log("이미 해당 과목은 신청 목록에 없습니다.");
+    
+}else{
+    courseList.splice(courseList.indexOf(course),1)
+    console.log(courseList);
 }
-
-
-
-
-
-
-//문제10,11
+*/
