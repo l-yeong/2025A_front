@@ -192,12 +192,12 @@ viewer: '콘텐츠 조회만 가능합니다.'
 */
 //[문제 10]
 
-// let drinkNames = ['콜라', '사이다', '커피'];
-// let drinkPrices = [1000, 1000, 1500];       // *음료의 번호 == 인덱스 번호 
-// // 조건 : (없는 번호) 0~2 사이(범위논리) , num >= 0 && num <= 2
-// let num = Number( prompt('음료 번호(0~2) : ') )
-// if( num >= 0 && num <= 2 ){  // (제품번호존재) 만약에 입력받은 번호가 0보다 이상이고 2보다 이하이다. 0~2
-//     console.log( `선택하신 음료는 ${ drinkNames[num] }입니다. 가격은 ${ drinkPrices[num] }원입니다.` );
-// }else{  // (그외 : 제품번호없음)
-//     console.log( `없는 상품입니다.`)
-// } 
+let drinkNames = ['콜라', '사이다', '커피'];
+let drinkPrices = [1000, 1000, 1500];       // *음료의 번호 == 인덱스 번호 
+// 조건 : (없는 번호) 0~2 사이(범위논리) , num >= 0 && num <= 2
+let num = Number( prompt('음료 번호(0~2) : ') )
+if( num >= 0 && num <= 2 ){  // (제품번호존재) 만약에 입력받은 번호가 0보다 이상이고 2보다 이하이다. 0~2
+    console.log( `선택하신 음료는 ${ drinkNames[num] }입니다. 가격은 ${ drinkPrices[num] }원입니다.` );
+}else{  // (그외 : 제품번호없음)
+    console.log( `없는 상품입니다.`)
+} 

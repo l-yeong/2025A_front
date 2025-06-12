@@ -180,22 +180,19 @@ if((year%4 == 0  &&  400 > 0) && 100 != 0  ){
 // 주차 위치 목록: let locationArray = [ 'A1', 'B3', 'C2' ];
 // 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오. 만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.
 //[문제9]
-let carArray = [ '250어7142', '142가7415', '888호8888' ];
-let locationArray = [ 'A1', 'B3', 'C2' ];
-
-let carSearch = ( prompt('차량검색 : ') )
-if( carArray.indexOf(carSearch) == -1 && locationArray.indexOf(0) ==-1){
-    console.log(`${carArray[carSearch]}차량의 위치는${ locationArray[carSearch] }`);
-    
-}
-else{
-    console.log(`차량이 존재하지 않습니다.`);
-}
 
 
+// let carArray = ['250어7142', '142가7415', '888호8888'];
+// let locationArray = ['A1', 'B3', 'C2'];  // 인덱스가 차량에 대응됨
 
+// let carSearch = prompt('차량 번호를 입력하세요:');
+// let index = carArray.indexOf(carSearch);  // 차량 번호가 배열에 있는지 확인
 
-
+// if (index >= 0 && index <= 2) {  // 0~2 인덱스 사이인지 검사
+//     console.log(`선택하신 차량은 ${carArray[index]}입니다. 위치는 ${locationArray[index]}입니다.`);
+// } else {
+//     console.log('없는 차량입니다.');
+// }
 
 
 
