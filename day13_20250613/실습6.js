@@ -105,16 +105,16 @@
 // 주어진 숫자 배열을 '버블 정렬' 알고리즘을 이용하여 오름차순으로 정렬하고, 최종 정렬된 배열을 출력하시오.
 // let numbers = [5, 3, 4, 1, 2];
 // 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
-let temp;
-let numbers = [5, 3, 4, 1, 2];
-for(i=0; i<=numbers.length -1; i++){
-    let num=numbers[i];
+// let temp;
+// let numbers = [5, 3, 4, 1, 2];
+// for(i=0; i<=numbers.length -1; i++){
+//     let num=numbers[i];
 
-    for(j=0; j<=num.length -1; j++){
-        temp=num[j];   
-    }
-}
-console.log(numbers); 
+//     for(j=0; j<=num.length -1; j++){
+//         temp=num[j];   
+//     }
+// }
+// console.log(numbers); 
 
 
 
@@ -145,21 +145,21 @@ console.log(numbers);
 //     }
 // }
 //===================(방법2)=====================
-let products = ['볼펜', '노트', '지우개'];
-let stock = [10, 5, 20];
-let 상품명=prompt("상품:");
-let 수량=Number(prompt("수량"));
-let findIndex =products.indexOf(상품명);
-// -1 : 없다 , 0이상 : 있다.
+// let products = ['볼펜', '노트', '지우개'];
+// let stock = [10, 5, 20];
+// let 상품명=prompt("상품:");
+// let 수량=Number(prompt("수량"));
+// let findIndex =products.indexOf(상품명);
+// // -1 : 없다 , 0이상 : 있다.
 
-if(findIndex >=0){
-    if(stock [findIndex] >= 수량 ){
-        console.log("구매완료");
-        stock[findIndex] -=수량;
-    }else{ console.log("재고 부족합니다.");
-        
-    }
-}
+// if(findIndex >=0){
+//     if(stock [findIndex] >= 수량 ){
+//         console.log("구매완료");
+//         stock[findIndex] -=수량;
+//     }else{ console.log("재고 부족합니다.");
+
+//     }
+// }
 
 
 
@@ -211,6 +211,20 @@ if(findIndex >=0){
 // 빈좌석 예약석   
 // 예약석 빈좌석
 // 예약석 빈좌석
+
+// let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+// for( index=0; index <= seatStatus.length -1; index++){
+//     let seat = seatStatus[index];
+//     if(seat =="빈좌석"){
+//         document.write(`<div style="color:blue">빈좌석</div>`)
+//     }else{
+//         document.write(`<div style="color:red">예약석</div>`)
+//     }
+// }
+
+
+
+
 
 // 문제 10: 주차 요금 정산하기
 // 차량별 주차 시간 데이터가 주어졌을 때, 아래의 요금 규정에 따라 각 차량이 지불해야 할 최종 주차 요금을 계산하여 HTML에 출력하는 프로그램을 작성하시오.
