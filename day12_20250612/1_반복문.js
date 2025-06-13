@@ -78,4 +78,5 @@ numList.push(num1);             //배열에 저장
 for(let 정수 = 1; 정수 <=3; 정수++){
     let num = prompt(`정수${정수}`);
     numList.push(num);
+    console.log(num);
 }
