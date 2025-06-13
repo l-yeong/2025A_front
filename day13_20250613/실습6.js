@@ -93,12 +93,13 @@
 // let numList=[]
 // let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 // for( i=0; i<= numbers.length -1 ; i++){
-//     let num=numbers[i];
-//     console.log(numbers) 
-//     if(num != numbers.indexOf(i)){
-//         console.log(num);        
+//     let num=numbers[i]; 
+//     if( numList.indexOf(i) == -1){
+//         numbers.splice(num,1);
 //     }
 
+// }
+// console.log(numbers)
 // }
 
 // 문제 6: 버블 정렬 (Bubble Sort) 구현하기
