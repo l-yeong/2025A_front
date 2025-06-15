@@ -89,7 +89,7 @@
 // let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 // 힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.
 
-//중복 숫자 1,5,2  // 노중복 3,4
+// 중복 숫자 1,5,2  // 노중복 3,4
 // let numList=[]
 // let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 // for( i=0; i<= numbers.length -1 ; i++){
@@ -102,22 +102,25 @@
 // console.log(numbers)
 // }
 
+
 // 문제 6: 버블 정렬 (Bubble Sort) 구현하기
 // 주어진 숫자 배열을 '버블 정렬' 알고리즘을 이용하여 오름차순으로 정렬하고, 최종 정렬된 배열을 출력하시오.
 // let numbers = [5, 3, 4, 1, 2];
 // 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
-// let temp;
 // let numbers = [5, 3, 4, 1, 2];
-// for(i=0; i<=numbers.length -1; i++){
-//     let num=numbers[i];
 
-//     for(j=0; j<=num.length -1; j++){
-//         temp=num[j];   
+// for (let i = 0; i < numbers.length - 1; i++) {
+//     for (let j = 0; j < numbers.length - 1 - i; j++) {
+//         if (numbers[j] > numbers[j + 1]) {
+
+//             let temp = numbers[j];
+//             numbers[j] = numbers[j + 1];
+//             numbers[j + 1] = temp;
+//         }
 //     }
 // }
-// console.log(numbers); 
 
-
+// console.log(numbers);
 
 
 
