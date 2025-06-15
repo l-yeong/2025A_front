@@ -90,28 +90,31 @@
 // 힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.
 
 // 중복 숫자 1,5,2  // 노중복 3,4
-// let numList=[]
+// let numList = [];
 // let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
-// for( i=0; i<= numbers.length -1 ; i++){
-//     let num=numbers[i]; 
-//     if( numList.indexOf(i) == -1){
-//         numbers.splice(num,1);
-//     }
 
+// for (let i = 0; i < numbers.length; i++) {
+//     let num = numbers[i];
+//     if (numList.indexOf(num) == -1) {
+//         numList.push(num);
+//     }
 // }
-// console.log(numbers)
-// }
+
+// console.log(numList); 
+
+
 
 
 // 문제 6: 버블 정렬 (Bubble Sort) 구현하기
 // 주어진 숫자 배열을 '버블 정렬' 알고리즘을 이용하여 오름차순으로 정렬하고, 최종 정렬된 배열을 출력하시오.
 // let numbers = [5, 3, 4, 1, 2];
 // 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
-// let numbers = [5, 3, 4, 1, 2];
+//  let numbers = [5, 3, 4, 1, 2];
 
 // for (let i = 0; i < numbers.length - 1; i++) {
 //     for (let j = 0; j < numbers.length - 1 - i; j++) {
 //         if (numbers[j] > numbers[j + 1]) {
+//             console.log(numbers)
 
 //             let temp = numbers[j];
 //             numbers[j] = numbers[j + 1];
@@ -120,7 +123,7 @@
 //     }
 // }
 
-// console.log(numbers);
+
 
 
 
@@ -134,8 +137,9 @@
 // let stock = [10, 5, 20];
 // let 상품명=prompt("상품:");
 // let 수량=Number(prompt("수량"));
-// //재고가 충분(비교/논리 판단), 재고를 차감(연산/수정)
-// //(2) 제품목록에서 입력받은 값 찾아라, (2-1) 제품목록들의 모든 제품들을 순회(조회)
+//재고가 충분(비교/논리 판단), 재고를 차감(연산/수정)
+//(2) 제품목록에서 입력받은 값 찾아라, (2-1) 제품목록들의 모든 제품들을 순회(조회)
+
 // for( index=0; index <= products.length -1; index++){
 //     let product = products[index] // index 번째의 제품 1개 호출
 //     if(product == 상품명 ){ // 만약에 index 제품명과 입력받은 제품명과 같으면        
@@ -198,6 +202,11 @@
 // 위키드          ★★★★☆☆☆☆☆☆
 // 글래디에이터2   ★★★★★★★☆☆☆
 // 청설            ★★★★★★☆☆☆☆
+
+
+// let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+// let movieRatings = [8, 4, 7, 6];
+
 
 // 문제 9: 좌석 예약 상태 표시하기
 // 총 6개의 좌석 상태 정보가 담긴 배열을 이용하여, 좌석 배치도와 상태를 HTML에 출력하는 프로그램을 작성하시오.
