@@ -71,3 +71,4 @@ for(let index=0; index<= 제품목록.length -1; index++){
     console.log(product.제품명); // index번쨰의 제품(객체)의 속성값 호출
     console.log(product['가격']);
 }
+

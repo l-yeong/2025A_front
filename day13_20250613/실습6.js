@@ -206,6 +206,21 @@
 
 // let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
 // let movieRatings = [8, 4, 7, 6];
+// let output = ``;
+// for (let i = 0; i <= movieNames.length - 1; i++) {
+//     let names = movieNames[i];
+//     output += `<div> ${names}`
+//     let ratings = movieRatings[i];
+
+//     for (let star = 1; star <= 10; star++) {
+//         if (star <= ratings) {
+//             output += `<span>★</span>`
+//         } else {
+//             output += `<span>☆</span>`
+//         }
+//     } output += `</div>`
+// }
+// document.write(output);
 
 
 // 문제 9: 좌석 예약 상태 표시하기
@@ -221,7 +236,7 @@
 // '예약석': color: red;
 // 좌석은 2칸씩 3줄 형태로 배치합니다.
 // (3). 출력 예시 (HTML)
-// 빈좌석 예약석   
+// 빈좌석 예약석
 // 예약석 빈좌석
 // 예약석 빈좌석
 
