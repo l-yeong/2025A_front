@@ -19,10 +19,17 @@
 // prompt를 세 번 사용하여 사용자로부터 '아이디', '비밀번호', '이름'을 순서대로 입력받습니다.
 // 입력받은 정보로 하나의 member 객체를 생성하고, members 배열에 저장하여 배열을 콘솔에 출력하시오.
 // 단] 입력받은 아이디가 이미 배열에 존재하면 '존재하는 아이디 입니다'를 출력하고 배열에 등록하지 않습니다.
-// const members = [
-//   { id: 'user1', password: 'pass1', name: '사용자1' },
-//   { id: 'user2', password: 'pass2', name: '사용자2' },
-// ];
+const members = [
+  { id: 'user1', password: 'pass1', name: '사용자1' },
+  { id: 'user2', password: 'pass2', name: '사용자2' },
+];
+
+let pid=prompt("아이디");
+let ppwd=prompt("비밀번호");
+let pname=prompt("이름");
+const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
+
+
 
 // 문제 3: 객체 배열의 속성 값 평균 구하기
 // scores 배열에 담긴 모든 학생의 수학(math) 점수 평균을 계산하여 콘솔에 출력하시오.
