@@ -279,14 +279,18 @@
 // 추가 요금 단위 계산식:parseInt( (총 주차시간 - 30) / 10 )
 // 계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.
 
-// let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
-// let usageMinutes = [65, 30, 140, 420];
-// output = ``;
-// for(let i=0; i<=carNumbers.length -1; i++){
-//     let numbers= carNumbers[i];
-//     let minutes= usageMinutes[i];
-//     let pay= parseInt((minutes-30)/10);
-//     let pay1= pay*500+1000
-//     output += `<div> ${numbers}: ${minutes}분주차, 최종요금: ${pay1}</div>` 
-// }
-// document.write(output);
+let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+let usageMinutes = [65, 30, 140, 420];
+output = ``;
+for(let i=0; i<=carNumbers.length -1; i++){
+    let numbers= carNumbers[i];
+    let minutes= usageMinutes[i];
+    let pay= parseInt((minutes-30)/10);
+    pay = pay > 0 ? pay : 0;
+    let pay1= pay*500+1000
+    if (pay1 > 20000) {
+        pay1 = 20000;
+    }
+    output += `<div> ${numbers}: ${minutes}분주차, 최종요금: ${pay1}원</div>` 
+}
+document.write(output);
