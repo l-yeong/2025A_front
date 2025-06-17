@@ -19,15 +19,41 @@
 // prompt를 세 번 사용하여 사용자로부터 '아이디', '비밀번호', '이름'을 순서대로 입력받습니다.
 // 입력받은 정보로 하나의 member 객체를 생성하고, members 배열에 저장하여 배열을 콘솔에 출력하시오.
 // 단] 입력받은 아이디가 이미 배열에 존재하면 '존재하는 아이디 입니다'를 출력하고 배열에 등록하지 않습니다.
-const members = [
-  { id: 'user1', password: 'pass1', name: '사용자1' },
-  { id: 'user2', password: 'pass2', name: '사용자2' },
-];
+// const members = [
+//   { id: 'user1', password: 'pass1', name: '사용자1' },
+//   { id: 'user2', password: 'pass2', name: '사용자2' },
+// ];
 
-let pid=prompt("아이디");
-let ppwd=prompt("비밀번호");
-let pname=prompt("이름");
-const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
+// // 1. prompt를 세 번 사용 : '아이디', '비밀번호', '이름'을 순서대로 입력받습니다
+// let id = prompt('아이디 : ');
+// let pwd = prompt('비밀번호 : ');
+// let name = prompt('이름 : ');
+// // 2. 입력받은 정보(여러변수)로 하나의 member 객체
+// let member = { }        // (1) 객체 생성  , 객체내 속성 추가 해야 하므로 *변수에 저장* 
+// member.id = id;         // (2) 객체내 새로운 속성명 에 입력받은 값 대입 
+// member.pwd = pwd;
+// member.name = name; // vs let member = { id : id , pwd : pwd , name : name }
+// // let member = [ ]; member.push( id )
+//     // * 입력받은 아이디가 이미 배열에 존재여부 
+//     // 1. 배열내 모든 객체 하나씩 (조회)꺼낸다.
+
+// let idCheck = false; // 중복이 있다(true)/없다(false) 기억하기 위한 변수 
+// for( let index = 0 ; index <= members.length -1 ; index++ ){
+//     let member = members[index]; // index번째의 member 객체 꺼내기(조회)
+//     // 2. 객체내 id 속성 값이 입력받은 값과 비교 
+//     if( member.id == id ){ // index번째의 member객체내 id속성값이 입력받은 id 와 같으면
+//         idCheck = true; // 중복 체크!!! 
+//         break; // 반복문 종료 
+//     }
+//     // * 아직 모두 조회된 상태가 아니므로 for문 안에서 배열에 저장 하지 않는다. 
+// } // for end 
+// // 3. member 객체, members 배열에 저장
+// // 4. members 배열을 콘솔에 출력하시오.
+// if( idCheck == false ){ 
+//     members.push(member);  console.log( '등록 성공');
+// }
+// else{  console.log( '등록 실패'); }
+
 
 
 
@@ -38,6 +64,13 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { name: 'B', math: 95, science: 88 },
 //   { name: 'C', math: 76, science: 78 }
 // ];
+// let total =0;
+// for(let index=0; index<=scores.length -1; index++){
+//   let student=scores[index];
+//   total += student.math;
+// }
+// console.log(total / scores.length)
+
 
 // 문제 4: 특정 조건을 만족하는 객체 찾기
 // products 배열에서 id가 3인 상품 객체를 찾아, 해당 객체 전체를 콘솔에 출력하시오. 일치하는 객체가 없으면 "상품을 찾을 수 없습니다."를 출력합니다.
@@ -47,7 +80,18 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { id: 3, name: '포도' },
 //   { id: 4, name: '딸기' }
 // ];
-
+// let idCheck=false;
+// for(i=0; i<=products.length-1;i++){
+//   let product=products[i];
+//   if(product.id==3){
+//     idCheck =true;
+//     console.log(product)
+//     break;
+//   }
+// }
+// if(idCheck==false){
+//   console.log('못찾았다')
+// }
 // 문제 5: 객체 배열 필터링하기
 // users 배열에서 isActive가 true인 사용자들만으로 구성된 새로운 배열 activeUsers를 만들고, 이 배열을 콘솔에 출력하시오.
 // const users = [
@@ -57,6 +101,15 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { id: 4, name: '유저4', isActive: false }
 // ];
 
+// const activeUsers=[];
+// for(i=0; i<=users.length -1; i++){
+//   let user=users[i];
+//     if(user.isActive == true){
+//     activeUsers.push;
+//     console.log(user)
+//   }
+// }
+
 // 문제 6: 객체 배열 데이터 변환하기
 // movies 배열에 있는 각 영화 객체에서 title 속성만 추출하여, 영화 제목들로만 이루어진 새로운 배열 movieTitles를 만들고 콘솔에 출력하시오.
 // const movies = [
@@ -65,6 +118,12 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { title: '매트릭스', director: '워쇼스키 자매' }
 // ];
 
+// const movieTitles=[];
+
+// for(i=0; i<=movies.length -1; i++){
+//   movieTitles.push(movies[i].title);
+// }
+// console.log(movieTitles)
 
 // 문제 7: 데이터 그룹화하기
 // 다음 team 배열을 department를 기준으로 그룹화하여, 아래 result와 같은 형태로 만드시오.
@@ -74,11 +133,34 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { name: '민수', department: '개발팀' },
 //   { name: '지혜', department: '기획팀' }
 // ];
-// // 최종 결과 형태 (result)
-// // {
-// //   '개발팀': ['철수', '민수'],
-// //   '기획팀': ['영희', '지혜']
-// // }
+// 최종 결과 형태 (result)
+// {
+//   '개발팀': ['철수', '민수'],
+//   '기획팀': ['영희', '지혜']
+// }
+//(방법1)
+// result={ '개발팀': [] , '기획팀': [] };
+       
+// for(i=0; i<=team.length-1; i++){
+//   const group=team[i];
+//   if(group.department == '개발팀'){
+//     result.개발팀.push(group.name);
+//   }else if(group.department == '기획팀'){
+//     result.기획팀.push(group.name)
+//   }
+// }
+// console.log(result);
+
+//(방법2)
+// let result2 = { }; // 미리 부서명 배열 정의하지 않고.
+// for( let index = 0 ; index <= team.length - 1 ; index++ ){
+//     let t = team[index];
+//     if( result2[ t.department ] ){ // result2에 index번째의 부서명이 존재하면 true/ 존재 하지 않으면 false
+//         result2[ t.department ].push( t.name ); // 부서명 배열에 index번째 이름 넣어준다.
+//     }else{ // 존재하지 않으면 새로운 배열 생성하고 초기값으로 index번재 이름 넣어준다.
+//         result2[ t.department ] = [  t.name  ]; // 배열 생성
+//     }
+// }
 
 // 문제 8: 장바구니 총액 계산하기
 // 고객의 장바구니 정보를 담은 cart 배열과 상품 정보를 담은 productsInfo 배열이 있습니다.
@@ -91,11 +173,21 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { id: 2, price: 5000 }, // 장바구니에 없는 상품
 //   { id: 3, price: 2500 }
 // ];
+// for(i=0; i=productsInfo.length-1; i++){
+//   const info=productsInfo;
+
+// }
+
+
+
 
 // 문제 9: 투표 결과 집계하기
-// 다음 votes 배열은 투표 결과를 나타냅니다. 각 후보가 몇 표를 받았는지 집계하여, 후보의 이름이 키이고 득표수가 값인 객체를 만들어 콘솔에 출력하시오.
+// 다음 votes 배열은 투표 결과를 나타냅니다. 각 후보가 몇 표를 받았는지 집계하여, 후보의 이름이 키이고 득표수가 값인 객체를 만들어  콘솔에 출력하시오.
 // const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
 // // 출력 예시: { A: 3, B: 3, C: 1 }
+
+ 
+
 
 // 문제 10: 웹툰 평점 시각화하기
 // webtoons 배열의 데이터를 이용하여, 각 웹툰의 평점을 별(★, ☆)로 시각화하여 HTML에 출력하시오.
@@ -107,11 +199,41 @@ const obj={ 'pid':pid, 'ppwd':ppwd, 'pname':pname}
 //   { title: '유미의 세포들', rating: 9.9 },
 //   { title: '전지적 독자 시점', rating: 9.7 }
 // ];
+
 // /* HTML 출력 예시:
 //    나 혼자만 레벨업 ★★★★★★★★★☆
 //    유미의 세포들 ★★★★★★★★★☆
 //    전지적 독자 시점 ★★★★★★★★★☆
 // */
+// output='';
+// for(i=0;i<=webtoons.length-1; i++){
+//   let webtoon=webtoons[i];
+//   for(let star=1; star<=10; star++){
+//     if( star <= webtoon.rating){
+//       output += `<span> ★</span>`
+//     }else{
+//       output += `<span> ☆</span>`
+//     }
+//   }
+// }
+
+// let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+// let movieRatings = [8, 4, 7, 6];
+// let output = ``;
+// for (let i = 0; i <= movieNames.length - 1; i++) {
+//     let names = movieNames[i];
+//     output += `<div> ${names}`
+//     let ratings = movieRatings[i];
+
+//     for (let star = 1; star <= 10; star++) {
+//         if (star <= ratings) {
+//             output += `<span>★</span>`
+//         } else {
+//             output += `<span>☆</span>`
+//         }
+//     } output += `</div>`
+// }
+// document.write(output);
 
 // 문제11 : 공공데이터 포털 : 인천 부평구 맛집 현황 테이블 만들기
 // [구현 조건]
