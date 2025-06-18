@@ -355,7 +355,7 @@ let response=
   for(i=0; i<=data.length -1; i++){
     const 맛집=data[i];
       html+= `<tr>
-                <td> ${맛집["업 소 명"]}</td> <td> ${맛집.matchCount} </td> <td> ${맛집.소재지} </td>
+                <td> ${맛집["업 소 명"]}</td> <td> ${맛집.연번} </td> <td> ${맛집.소재지} </td>
                 <td> ${맛집.지정메뉴} </td> <td> ${맛집["전화번호"]} </td> <td> ${맛집.업태} </td>
               </tr>`
   }
