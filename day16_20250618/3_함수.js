@@ -49,34 +49,46 @@ printNumbers(15);
 // 예제 6: prompt와 함수 활용
 // prompt를 이용해 사용자로부터 이름을 입력받으시오.
 // 입력받은 이름을 매개변수로 받아, 해당 이름이 저장된 userList 전역 배열에 push하는 addUser 함수를 정의하고 호출하시오.
-let userList=[]
+// let userList=[]
 
-function addUser(){
-    let name=prompt('이름');
-    userList.push(name);
-}
-addUser();
-console.log(userList);
+// function addUser(){
+//     let name=prompt('이름');
+//     userList.push(name);
+// }
+// addUser();
+// console.log(userList);
 
 // 예제 7: 배열을 매개변수로 전달
 // 임의의 이름 들이 담긴 배열을 매개변수로 받아, for 반복문을 사용하여 배열의 모든 요소를 콘솔에 하나씩 출력하는 printFruits 함수를 정의하시오.
-const names=['유재석','강호동','신동엽']
+const famous=['유재석','강호동','신동엽']
 function printFruits(names){
-    for(j=0; j<=names; j++){
-        const nuser=names[j]
-        console.log(nuser)
+    for(j=0; j<=names.length -1; j++){
+        console.log(names[j])
     }
 }
-printFruits();
+printFruits(famous);
 // 예제 8: Boolean 값 반환하기
 // 임의의 숫자 하나를 매개변수로 받아, 그 숫자가 0보다 크면 true를, 그렇지 않으면 false를 반환하는 isPositive 함수를 만들어 보세요.
 function isPositive(n){
     if(n>0){
-        console.log('true');
-    }else{console.log('false')}
+        return true;
+    }else{
+        return false;
+    }
 }
-isPositive(-5);
+isPositive(10);
+let summ=isPositive(-5);
+console.log(summ);
 
 // 예제 9: 전역 변수와 지역 변수
 // let globalText = '전역'; 변수를 선언하세요. printLocal 함수 안에서는 let localText = '지역'; 변수를 선언하고, 
 // 두 변수를 모두 콘솔에 출력해 보세요. 함수 바깥에서는 globalText만 출력되는 것을 확인하세요.
+// let globalText = '전역';
+//     function printLocal(){
+//         let localText = '지역';
+//         console.log(globalText)
+//         console.log(localText)
+//     }
+//         console.log(globalText)
+//         console.log(localText) //오류 발생
+// printLocal();
