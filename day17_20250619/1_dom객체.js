@@ -74,6 +74,7 @@ function func2(){
     //*
     const body=document.querySelector('body');
     body.style.backgroundColor='white';
+    func3()
 }
 
 // [8]
