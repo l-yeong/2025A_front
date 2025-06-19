@@ -52,34 +52,34 @@
 const 가계부목록 = [{ 코드:1, 날짜:'2025-06-19', 항목명:'점심식사', 금액:'9000'},
                     {코드:2, 날짜:'2025-06-19', 항목명:'교통비', 금액:'1500'}]
 let 마지막인덱스 = 가계부목록.length-1;
-let 코드자동번호=가계부목록[마지막인덱스] //현재 초기 배열의 마지막객체의 코드번호;
+let 코드자동번호=가계부목록[마지막인덱스].코드 //현재 초기 배열의 마지막객체의 코드번호;
 
 // [3] 기능(함수단위)구성
 //1.등록함수 정의, 실행 : 등록버튼 onclick 했을때
-function 등록함수(){ //console.log('---등록함수---') //2. 함수onclick 확인
-    const dateInput = document.querySelector('#dateInput');         //3.<input id="dateInput"type="date" /><br />
-    const contentInput = document.querySelector('#contentInput');   //3.<input id="contentInput"type="text" /><br />
-    const moneyInput=document.querySelector('#moneyInput');         //3.<input id="moneyInput"type="number" /> <br />
+function 등록함수(){console.log('---등록함수---') //2. 함수onclick 확인
+    const dateInput = document.querySelector('#dateInput');         console.log(dateInput)//3.<input id="dateInput"type="date" /><br />
+    const contentInput = document.querySelector('#contentInput');   console.log(contentInput)//3.<input id="contentInput"type="text" /><br />
+    const moneyInput=document.querySelector('#moneyInput');         console.log(moneyInput)//.<input id="moneyInput"type="number" /> <br />
     //4. 각 마크업 객체에서 입력값 가져오기
-    const date=dateInput.value;        
-    const content=contentInput.value;   
-    const money=money.value;           
+    const date=dateInput.value;         console.log(date);
+    const content=contentInput.value;   console.log(content);
+    const money=moneyInput.value;            console.log(money);
     //5. 원하는 속성구성으로 객체 만들기, 설계: (코드:, 날짜:, 항목명:,금액:)
-        //*코드자동번호 에 1증가 한 후에 대입한다. <실무x>
+        //*코드자동번호 에 1증가 한 후에 대입한다.
         코드자동번호++;
-    const obj = {코드:코드자동번호, 날짜:date,항목명:content,금액:money}; 
+    const obj = {코드:코드자동번호, 날짜:date,항목명:content,금액:money}; console.log( obj)
     //6. 구성한 객체를 전역(배열)변수에 저장한다.
-    가계부목록.push(obj);   
+    가계부목록.push(obj); console.log(가계부목록)  
     //7.새로고침, 출력함수 재호출
     전체조회함수();
 }//func end
-
-
 //2. 전체조회함수, 실행조건 : 1.js 열렸을때(최초1번) 2. 등록 성공했을때
-function 전체조회함수(){ 
+전체조회함수();// JS가 그냥 1번 출력함수 호출한다.
+function 전체조회함수(){ console.log('----전체조회함수.exe----')
     //***배열내 객체 1개당 <tr> 1개***
+
     //3. 어디에, <tbody id="contentbody">
-    const contentBody=document.querySelector('#contentBody'); 
+    const contentBody=document.querySelector('#contentBody'); console.log(contentBody);
     //4. 무엇을, 배열내 객체정보 ---> html 형식 표현
         //(1) 배열내 모든(for) 객체의 정보를
     let html='';
