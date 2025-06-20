@@ -323,8 +323,8 @@
     1. 정의 : 문서객체표준, HTML 마크업들을 객체처럼 다루기 *객체는 속성(property)과 함수(function) 포함
     2. 내장객체: document
     3. 주요 속성 과 함수
-        (1) document.quertSecletor('선택자');   : HTML 마크업 객체 반환 함수, 반환값: 객체1개
-        (2) document.quertSecletorAll('선택자') : HTML 마크업 객체 반환 함수, 반환값: 배열1개(여러개)
+        (1) document.querytSecletor('선택자');   : HTML 마크업 객체 반환 함수, 반환값: 객체1개
+        (2) document.querytSecletorAll('선택자') : HTML 마크업 객체 반환 함수, 반환값: 배열1개(여러개)
             *선택자(CSS동일) 마크업명/ .클래스명 / - #ID명
             ()함수값 // 없으면 속성명
 
@@ -345,3 +345,11 @@
             (마크업객체).classList.remove('클래스명')   : 지정 마크업에 클래스 삭제
             (마크업객체).classList.toggle('클래스명')   : 지정 마크업에 클래스 추가 혹은 (존재하면)삭제
             (마크업객체).classList.contains('클래스명') : 지정 마크업에 클래스 존재 여부 TRUE/FALSE 변환
+    * 연산식 또는 변수호출식 길어졌을때는 중간 결과를 변수에 담아서 확인
+        let 변수명A = document.querySecletor('선택자');
+        let 변수명B = 변수명A.value
+        ==========vs=============
+        let 변수명B = document.quertSecletor('선택자').value
+        예]
+            let 변수명A = 3+2
+            let 변수명B = 변수명A 
