@@ -111,18 +111,18 @@ function productAdd(){ console.log('---등록버튼----')
 // 3. 제품목록 출력함수, 실행조건 : (1)페이지(HTML/JS)가 열렸을때 함수실행, (2) 등록/삭제/수정 처리 했을때
 productPrint();
 function productPrint(){ console.log('productPrint.exe')
-    const 기록=document.querySelector('.기록');
+    const recod=document.querySelector('.기록');
     html=``;
     for(i=0; i<=productList.length -1; i++){
         let product=productList[i]; console.log(product);
         html+=
             `<tr>
-                        <td>${productList.pimg}</td><td>음료</td><td>코카콜라</td>
-                        <td>1000</td><td>2025-06-17</td>
+                        <td>${productList.pimg}</td><td>${categoryList}</td><td>${product.pname}</td>
+                        <td>${product.pprice}</td><td>${day}</td>
                         <td><button class="btnDelete"> 삭제 </button></td>
                         <td><button class="btnEdit"> 수정 </button></td>
                     </tr>`
-    }
+    }document.write(html)
 
 }
 
