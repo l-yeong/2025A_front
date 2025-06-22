@@ -14,19 +14,19 @@ console.log(ageSum)
 
 console.log(isAdult(17))
 // 실습 2: 배열의 총합 구하기
-// 숫자로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 모든 요소의 합계를 구하여 반환하는 sumArray 함수를 만드세요. 아래 numbers 배열로 테스트해 보세요.
-const numbers = [10, 20, 30, 40, 50];
+// 숫자로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 모든 요소의 합계를 구하여 반환하는 sumArray 함수를 만드세요. 아래 nums 배열로 테스트해 보세요.
+const nums = [10, 20, 30, 40, 50];
 function sumArray(array) {
-    let number=0;
+    let num=0;
     for (i = 0; i <=array.length-1; i++) {
-        number += array[i];
+        num += array[i];
 
     }
-    return number;
+    return num;
 }
-sumArray(numbers);                  //함수 호출하고 반환값을 변수에 저장 하지 않았다.
-let number= sumArray(numbers);      //함수 호출하고 반환값을 변수에 저장 했다
-console.log(sumArray(numbers));
+sumArray(nums);                  //함수 호출하고 반환값을 변수에 저장 하지 않았다.
+let num= sumArray(nums);      //함수 호출하고 반환값을 변수에 저장 했다
+console.log(sumArray(nums));
     
 // 실습 3: 가장 긴 단어 찾기
 // 문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요.
@@ -65,36 +65,30 @@ console.log(gainScore())
 console.log(gainScore())
 console.log(loseScore())
 console.log(userScore)
+
 // 실습 5: 최고 점수 학생 찾기
 // 전역변수 students 배열 데이터를 이용하여 , 가장 높은 점수(score)를 가진 학생의 이름을 찾아 반환하는 findTopStudent 함수를 만드세요.
 //1. 매개변수:x
 //2. 리턴: 가장높은점수
 //3. 로직:가장 높은 점수(score)를 가진 학생의 이름을 찾는행동
 //
-
-
 const students = [
   { name: '김철수', score: 85 },
   { name: '이영희', score: 92 },
   { name: '박민준', score: 78 }
 ];
-
-
-function findTopStudent (){ 
-    let maxNumber=students[0];
-    for(i=0; i<= students.length -1; i++){
+let numMax={name:'', score:0};
+function findTopStudent(){
+    for(i=0; i<students.length-1; i++){
         let scoreMax=students[i]
-        if(scoreMax.score>maxNumber){
-            maxNumber=scoreMax.score;
-            
+        if(scoreMax.score > numMax.score){
+            numMax=scoreMax
         }
         
-    }
+    }return numMax;
 }
-let topStudent=findTopStudent()
-console.log(topStudent)
-
-
+const studentsMax=findTopStudent()
+console.log(studentsMax);
 
 
 // function findTopStudent(  ){
@@ -142,28 +136,26 @@ console.log(topStudent)
 // num1, num2, operator ( '+', '-') 세 개의 매개변수를 받는 calculator 함수를 만드시오.
 // operator가 '+'이면 두 수의 합을, '-'이면 두 수의 차를 콘솔에 출력하시오. (if문 사용)
 
-// function calculator(num1,num2,operator){
-//     const number1 = prompt("숫자를 입력하세요");
-//     const operator = prompt("연산자를 입력하세요");
-//     const number2 = prompt("숫자를 입력하세요");
-//     let result;
-//     if(operator === "+"){
-//         result = number1 + number2;
+// function calculator (num1,operator,num2){
+//     let total;
+//     if(operator ==="+"){
+//         total = num1+num2;
 //     }else if(operator === "-"){
-//         result = number1 - number2;
-//     }else if(operator === "*"){
-//         result = number1 * number2;
+//         total = num1-num2;
+//     }else if(operator==="*"){
+//         total = num1*num2;
 //     }else if(operator === "/"){
-//         result = number1 / number2;
+//         total = num1/num2;
 //     }else{
-//         alert("연산자를 잘못 입력하셨습니다.");
+//         alert("잘못 입력 되었습니다.")
+//         return;
 //     }
-//     console.log(result);
-//     return result;
+//     console.log(total);
 // }
-
-
-// calculator();
+// const number1=Number(prompt('숫자 입력하세요'));
+// const oper=prompt('연산자입력하세요');
+// const number2=Number(prompt('숫자 입력하세요'));
+// calculator(number1,oper,number2);
 
 
 // 실습 8: HTML 리스트(ul, li) 동적 생성
