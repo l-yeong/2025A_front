@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <h1>인사관리 대시보드</h1>
+    <p>부서,사원,휴가 통합 시스템</p>
+
+    <div> <!--부서관리-->
+        <p>부서관리</p>
+        <div>
+            <input type="text">
+            <button>추가</button>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>부서명</th>
+                    <th>관리</th>
+                </thead>
+            </table>
+        </div>
+
+    </div><!--부서관리 end-->
+    <div class="centerWrap">
+
+        <div class="centerHeader"> <!-- 사원 등록-->
+            <h3>사원등록</h3>
+            이름 : <input class="namesInput" type="text" />
+            직급 : <input class="rankInput" type="text" /><br />
+            사진 : <input class="staffImage" type="file" accept="image/* "/>
+           
+             <br /><br /><br />
+            부서 
+            <select class="categotyRank">
+                <option value="" disabled selected> 카테고리 선택하세요. </option>
+                <option value="1"> 개발팀 </option>
+                <option value="2"> 디자인팀 </option>
+                <option value="3"> 기획팀 </option>
+            </select>
+             <button onclick="staffManagement()"> 등록 </button>
+        </div> <!-- 사원등록 end-->
+        <div class="cneterContent">
+            <h3>사원 전체 목록</h3>
+            <table>
+                <thead>
+                    <th>사진</th> <th>이름</th> <th>부서</th>
+                    <th>직급</th> <th>관리</th>
+                </thead>
+                <tbody>
+                    <td><img src="https://placehold.co/100x100" /></td>
+                     <td>유재석</td> <td>기획팀</td>
+                    <td>부장</td> <td><button class="editBtn">수정</button> <button class="deleteBtn">삭제</button></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src='실습15.js'></script>
+</body>
+
+</html>
