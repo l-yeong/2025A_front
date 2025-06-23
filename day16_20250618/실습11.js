@@ -195,3 +195,4 @@ console.log(studentsMax);
 
 // let age= getTicketPrice(8);
 // console.log(age);
+//짤려서추가
