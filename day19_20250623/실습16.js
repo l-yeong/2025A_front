@@ -28,6 +28,8 @@
 //     -login() 구현:
 //         --입력된 아이디와 비밀번호를 입력받아 (memberList)배열 내의 어떤 회원 객체의 id, pw 값과 모두 일치하면, "로그인 성공" 알림창을 띄우고 함수를 즉시 종료합니다.
 //         --일치하는 정보를 찾지 못하면, "동일한 회원정보가 없습니다. 로그인실패" 알림창을 띄웁니다.
+
+//=============================(1)
     const memberList=[{no:1, id:'qwer', pw:'qwe' }];
 function signUp(){  console.log('--signUp.exe--');
 
@@ -37,21 +39,53 @@ function signUp(){  console.log('--signUp.exe--');
     // 2. 입력마크업 객체내 입력값 가져오기
     const id=signId.value;
     const pw=signPw.value;
-    const no=memberList[memberList.length-1].no+1; //배열내 마지막인덱스의 회원번호 +1
+    // 3. 객체화
+    let no=1; // 회원번호 초기값
+        //========================sessionStorage 에서 memberList 가져오기=========//
+        //(1) sessionStroage 에서 memberList 가져오기
+        let  memberList = sessionStorage.getItem('memberList'); // .getItem('속성명'/key)
+        //(2) 존재 하지 않으면 (배열) 새로 생성, 존재하면 타입 변환
+        if(memberList == null){ // 해당 속서명(memberList)이 존재 하지 않으면
+            memberList=[];  // 새로운 배열 생성
+            // no(회원번호) 1 사용한다.
+        }else{ // 존재하면 JSON(배열타입)으로 변환하기.
+            memberList =JSON.parse(memberList);
+            no=memberList[memberList.length-1].no+1; //배열내 마지막인덱스의 회원번호 +1
+        }
+
+  
     const signAdd={no:no, id:id, pw:pw };
+    // 4. 배열 저장
     memberList.push(signAdd);                       console.log(memberList)
+    alert('회원 등록 성공')
+        // ================sessionStroage 에서 memberList 저장하기 =============//
+        // (1) 배열타입을 JSON문자열 타입으로 변환
+        let jsonData= JSON.stringify(memberList);
+        // (2) sessionStroage 에 memberList 속성명으로 배열 저장하기.
+        sessionStorage.setItem('memberList',jsonData); // 'memberList'라는 이름(아무거나) 으로 JsonData변수값 저장
 
 }
 
 function login(){ console.log('--login--');
-    const loginId=document.querySelector('.lginId');
-    const loginpw=document.querySelector('.loginPw');
+    const loginId=document.querySelector('.loginId');
+    const loginPw=document.querySelector('.loginPw');
+    const id = loginId.value;
+    const pw = loginPw.value;
+    // ==================sessionStorage 에서 memberList 가져오기=========//
+        let memberList=sessionStorage.getItem('memberList');
+        if(memberList==null){
+            memberList=[];
+        }else{
+            memberList = JSON.parse(memberList)
+        }
+
     for(i=0; i<=memberList.length-1; i++){
-        let member=memberList.length-1;
-        if(member.id&&id == member.pw&&pw){
+        let member=memberList[i]
+        if(member.id==id && member.pw==pw){
             alert('로그인 성공');
             return;
         }
     }
     alert('로그인 실패;');
 }
+
