@@ -53,7 +53,7 @@ function productAdd(){ console.log( '>> productAdd exe');
     //(3) 여러 데이터 객체로 구성하기.
 
     let productList=getLocalProduct(); // ===========================================================local 수정자리
-        let pcode=productList.length == 0 ? 1 : productList[productList.length-1].pcode+1
+        let pcode=productList.length == 0 ? 1 : productList[productList.length-1].pcode+1 // ===========================================================local 수정자리
 
     const obj = {
         pcode : pcode,
