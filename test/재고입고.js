@@ -1,10 +1,10 @@
 
-const productArray = [
-    { no : 1 , id : 1, cname : "입고" , number : 3 , etc : "asad" , 변동날짜 : "" },
-    { no : 2 , id : 2, cname : "출고" , number : 7 , etc : "asda" , 변동날짜 : "" },
-    { no : 3 , id : 3, cname : "입고" , number : 2 , etc : "dsad" , 변동날짜 : "" }
-]
-let no = 3;
+// const productArray = [
+//     { no : 1 , id : 1, cname : "입고" , number : 3 , etc : "asad" , 변동날짜 : "" },
+//     { no : 2 , id : 2, cname : "출고" , number : 7 , etc : "asda" , 변동날짜 : "" },
+//     { no : 3 , id : 3, cname : "입고" , number : 2 , etc : "dsad" , 변동날짜 : "" }
+// ]
+// let no = 3;
 // 재고 입고 (Inventory Inflow / Stock In)
 // 기능: 특정 제품의 재고를 증가시키기 위한 입고 내역 기록.
 // 입력 필드: 재고ID(자동), 제품 ID, 변동 유형 ('입고/출고') , 변동 수량, 입출사유 ,  변동날짜(오늘날짜 자동).

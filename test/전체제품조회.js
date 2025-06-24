@@ -12,19 +12,19 @@
 // let pcode = 3;
 //상품코드 : pcode , 상품명 : pname , 가격 : pprice , 간단한설명 : pcontent , 이미지 : pimg
 // ===========================================================local 수정자리
-function getLocalProduct(){
-    let productList=localStorage.getItem('productList');
-    if(productList==null){
-        productList=[];
-    }else{
-        productList=JSON.parse(productList);
-    }
-    return productList;
+// function getLocalProduct(){
+//     let productList=localStorage.getItem('productList');
+//     if(productList==null){
+//         productList=[];
+//     }else{
+//         productList=JSON.parse(productList);
+//     }
+//     return productList;
 
-}
-function setLocalProduct(productList){
-    localStorage.setItem("productList",JSON.stringify(productList));
-}
+// }
+// function setLocalProduct(productList){
+//     localStorage.setItem("productList",JSON.stringify(productList));
+// }
 // ===========================================================local 수정자리
 
 // 1. 제품 등록 함수 : 실행조건 : 등록버튼 onclick 클릭했을때
