@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <div>
+        <div>
+            제품:<input class="pnamesInput" type="text" />
+            가격:<input class="ppriceInput" type="number" />
+            설명:<textarea class="pcontentText" placeholder="설명"></textarea>
+            이미지:<input class="pimgInput" type="file" accept="imgage/*">
+            <button onclick="product()"> 등록 </button>
+        </div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>제품</th>
+                    <th>가격</th>
+                    <th>설명</th>
+                    <th>이미지</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td><img src="#"/></td>
+                    <td>코카콜라</td>
+                    <td>10000</td>
+                    <td>맛있음</td>
+                    <td><button onclick="deleteBtn" class="btnDelete"> 삭제</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+
+    <script src='test.js'></script>
+</body>
+
+</html>
