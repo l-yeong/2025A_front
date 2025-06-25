@@ -11,21 +11,28 @@
 
 // let pcode = 3;
 //상품코드 : pcode , 상품명 : pname , 가격 : pprice , 간단한설명 : pcontent , 이미지 : pimg
-// ===========================================================local 수정자리
-// function getLocalProduct(){
-//     let productList=localStorage.getItem('productList');
-//     if(productList==null){
-//         productList=[];
-//     }else{
-//         productList=JSON.parse(productList);
-//     }
-//     return productList;
 
-// }
-// function setLocalProduct(productList){
-//     localStorage.setItem("productList",JSON.stringify(productList));
-// }
-// ===========================================================local 수정자리
+
+//(1) lecalStorage 에서 'products' 배열 가져오기
+//(2) 사용처 : product 배열에 필요한곳
+function getLocalProduct(){ 
+    let productList=localStorage.getItem('productList');
+    // 1. 호출하기
+    if(productList==null){
+    // 2. 만약에 호출값이 비어 있으면 빈배열로 초기화
+        productList=[];
+    }else{  // 아니면 JSON 타입으로 변환
+        productList=JSON.parse(productList);
+    }
+    // 3. 호출된 products 배열을 함수를 호출했던곳으로 반환
+    return productList;
+
+} 
+    //(1) 함수호출시 전달 받은 매개변수 'product'를 localStorage에서 저장하기
+    //(2) 사용처 : products배열의 변화가 있는곳
+function setLocalProduct(productList){  
+    localStorage.setItem("productList",JSON.stringify(productList));
+}
 
 // 1. 제품 등록 함수 : 실행조건 : 등록버튼 onclick 클릭했을때
 
@@ -53,6 +60,8 @@ function productAdd(){ console.log( '>> productAdd exe');
     //(3) 여러 데이터 객체로 구성하기.
 
     let productList=getLocalProduct(); // ===========================================================local 수정자리
+
+        // + pcode는 빈배열이면 1, 빈배열이 아니면 마지막pcode+1 (자동부여) *localStorage랑 상관은 없음
         let pcode=productList.length == 0 ? 1 : productList[productList.length-1].pcode+1 // ===========================================================local 수정자리
 
     const obj = {
@@ -100,6 +109,7 @@ function viewAllProduct(){
 }
 viewAllProduct();
 function DeleteProduct(pcode){ console.log('---exe----')
+    //(1) 삭제할 번호의 객체를 찾는다
     let productList=getLocalProduct(); // ===========================================================local 수정자리
     for(i=0; i<=productList.length-1 ; i++){
         let product=productList[i]; console.log(product);
