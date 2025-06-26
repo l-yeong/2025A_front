@@ -5,13 +5,12 @@
     <meta charset='utf-8'>
 </head>
 
-<body>
     <div>
         <div>
-            제품명<input class="pnameInput"type="text" />
-            가격<input class="ppriceInput"type="number" />
-            설명<textarea class="pcontentText"placeholder="설명"></textarea>
-            이미지<input  class="pimgInput "type= "file" accept="img/*"/>
+            제품명 <input class="pnameInput" type="text" />
+            가격 <input class="ppriceInput" type="number"/>
+            설명 <textarea class="pcontentText"placeholder="설명"> </textarea>
+            이미지 <input class="pimgInput" type="file" accept="imgage/*" />
             <button onclick="productAdd()">등록</button>
         </div>
     </div>
@@ -19,15 +18,16 @@
         <table>
             <thead>
                 <tr>
-                    <th>제품명</th><th>가격</th><th>이미지</th>
-                    <th>설명</th><th>비고</th>
+                    <th>제품명</th>
+                    <th>가격</th>
+                    <th>설명</th>
+                    <th>이미지</th>
+                    <th>비고</th>
                 </tr>
             </thead>
             <tbody class="tbody">
-                <tr>
-                    <td>코카콜라</td><td>1000</td><td>설명</td><td><img src="#"></td>
-                    <td><button class="deleteBtn" onclick="productDelete()">삭제</button></td>
-                </tr>
+                <td>콜라</td><td>1000</td><td>맛있음</td><td><img src="#"></td>
+                <td><button class="deleteBtn" onclick="productDelete()">삭제</button></td>
             </tbody>
         </table>
     </div>
