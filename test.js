@@ -74,3 +74,4 @@ function productDelete(pcode){
         }
     }
 }
+///asdasdas
