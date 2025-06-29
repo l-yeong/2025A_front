@@ -50,44 +50,184 @@
 //     휴가 관리 기능:
 //         신청: 휴가 정보를 입력하고 "신청" 버튼 클릭 시, 휴가 신청 목록에 즉시 추가되어야 합니다.
 //         취소: "신청취소" 버튼 클릭 시, 해당 휴가 신청 내역이 목록에서 제거되어야 합니다.
+let departmentList = [{ dno: 1, dname: '개발팀' }, { dno: 2, dname: '다지인팀' }, { dno: 3, dname: '기획팀' }]
+let dno = 4;
+function departmentAdd() {
+    console.log("departmentAdd")
+    const departmentInput = document.querySelector('.departmentInput');
+    const dname = departmentInput.value;
+
+    let depList = {
+        dno: Number(dno),
+        dname: dname
+    }
+
+    departmentList.push(depList);
+    departmentInput.value='';
+    console.log(departmentList);
+    alert("부서등록성공");
+    departmentPrint()
+}
+departmentPrint()
+function departmentPrint() {
+    let leftTbody = document.querySelector('.leftTbody');
+    html = ``;
+    for (i = 0; i <= departmentList.length - 1; i++) {
+        const dep = departmentList[i]
+        html +=
+                    `<tr>
+                        <td>${dep.dno}</td>
+                        <td>${dep.dname}</td>
+                        <td>
+                            <button class="eidBtn" onclick="departmentBtnEdit(${dep.dno})">수정</button>
+                            <button class="delBtn" onclick="departmentBtnDelete(${dep.dno})">삭제</button>
+                        </td>
+                    </tr>`
+    }
+    leftTbody.innerHTML=html;
+    console.log(html)
+
+}
+
+/*================삭제 버튼=========================== */
+function departmentBtnDelete(dno) { console.log("delete");
+    for (let i = 0; i <= departmentList.length - 1; i++) {
+        if (departmentList[i].dno == dno) {
+            departmentList.splice(i, 1);
+            alert('사원정보가 삭제 되었습니다.');
+            departmentPrint();
+            return;
+        }
+    }
+}
+/*===============수정 버튼========================== */
+function departmentBtnEdit(dno) {
+    console.log("edit")
+    for (let i = 0; i <= departmentList.length - 1; i++) {
+        let dep = departmentList[i]
+        if (dep.dno == dno) {
+            const dnames = prompt('수정할 이름:');
+            dep.dname = dnames;
+            alert('정보 수정 완료')
+            departmentPrint();
+            return;
+        }
+    }
+}
 
 
 //==============================사원관리=============================================//
-let categoryStaff=[{cno:1,sname:'개발팀'},{cno:2,sname:'디자인팀'},{cno:3,sname:'기획팀'}]; //console.log(categoryStaff);
-let staffInfo=[{sno:1,cno:3,names:'유재석',rank:'부장'},{staffImg:'https://placehold.co/100x100'}];                        //console.log(staffInfo);
-function staffManagement(){ console.log('----staffManageMent.exe----')
-    const namesInput=document.querySelector('.namesInput');         //console.log(namesInput);
-    const rankInput=document.querySelector('.rankInput');           //console.log(rankInput);
-    const staffImage=document.querySelector('.staffImage');         //console.log(staffImg); 
-    const categoryRank=document.querySelector('.categoryRank');    //console.log(categoryRank); 
-    
-    const names=namesInput.value;       //console.log(names);
-    const rank=rankInput.value;         //console.log(rank);
-    const staffImg=staffImage.files[0]; //console.log(staffImg);
+let categoryStaff = [{ cno: 1, cname: '개발팀' }, { cno: 2, cname: '디자인팀' }, { cno: 3, cname: '기획팀' }]; //console.log(categoryStaff);
+let staffInfo = [{ sno: 1, cno: 3, names: '유재석', rank: '부장', staffImg: 'https://placehold.co/100x100' }];                        //console.log(staffInfo);
+let cno = 2;
+let sno = 2;
 
-    if(names == ''|| rank ==''){
-        return alert('항목이 비어있습니다.') ; 
+
+/*=============================스태프 등록 =========================================*/
+function staffManagement() {
+    console.log('----staffManageMent.exe----')
+    const namesInput = document.querySelector('.namesInput');         //console.log(namesInput);
+    const rankInput = document.querySelector('.rankInput');           //console.log(rankInput);
+    const staffImage = document.querySelector('.staffImage');         //console.log(staffImg); 
+    const categoryRank = document.querySelector('.categoryRank');    //console.log(categoryRank); 
+
+    const cno = categoryRank.value;
+    const names = namesInput.value;       //console.log(names);
+    const rank = rankInput.value;         //console.log(rank);
+    const staffImg = staffImage.files[0]; //console.log(staffImg);
+
+    if (names == '' || rank == '') {
+        return alert('항목이 비어있습니다.');
     }
 
-    let staffList={
-        sno:Number(), cno:Number(),
-        names:names, rank:rank,
-        staffImg : staffImg ? URL.createObjectURL( staffImage ) : 'https://placehold.co/100x100'
+    let staffList = {
+        sno: Number(sno), cno: Number(cno),
+        names: names, rank: rank,
+        staffImg: staffImg ? URL.createObjectURL(staffImg) : 'https://placehold.co/100x100'
     }
     //console.log(staffList)
-    staffInfo.push(staffList);      console.log(staffList);
-    categoryRank.value=''; 
-    namesInput.value='';
-    rankInput.value='';
-    alert("부서 등록 완료") 
-    categoryInfo()
-};  
-categoryInfo
-function categoryInfo(){ console.log('----category Info----')
-    const categoryRank=document.querySelector('.categoryRank');
-    for(i=0; i<=categoryStaff.length-1; i++){
-        let category=categoryStaff[i];          console.log(category);
-        
-    }
+    staffInfo.push(staffList);      //console.log(staffList);
+    categoryRank.value = '';          //console.log(categoryRank); 
+    namesInput.value = '';            //console.log(namesInput);
+    rankInput.value = '';             //console.log(rankInput);
+    alert("부서 등록 완료")
+    staffPrint();
+};
+/*=============================카테고리 부분 =========================================*/
+categoryInfo();
+function categoryInfo() { //console.log('----category Info----')
+    html = ``;
+    const categoryRank = document.querySelector('.categoryRank');
+    for (let i = 0; i <= categoryStaff.length - 1; i++) {
+        let category = categoryStaff[i];          //console.log(category);
+        html += `<option value=${category.cno}>${category.cname}</option>`
 
+    }
+    categoryRank.innerHTML = html;
+    //console.log(html);
+}
+
+/*=============================스태프 테이블 추가 =========================================*/
+staffPrint()
+function staffPrint() {
+    let html = ``;
+    const centerTbody = document.querySelector('.centerTbody')
+    for (let i = 0; i <= staffInfo.length - 1; i++) {
+        const staff = staffInfo[i];
+        const category = getCategory(staff.cno);
+        // console.log(staff);
+        // console.log(category);
+        html += `
+        <tr>
+            <td><img src="${staff.staffImg}" /></td>
+            <td>${staff.names}</td> <td>${category.cno}</td>
+            <td>${staff.rank}</td> 
+            <td>
+                <button class="editBtn" onclick="staffBtnEdit(${staff.sno})">수정</button> 
+                <button class="deleteBtn" onclick="staffBtnDelete(${staff.sno})">삭제</button>
+            </td>
+        </tr>
+        `
+    }
+    centerTbody.innerHTML = html;
+    // console.log(html);
+
+}
+/*===================카테고리 번호=========================*/
+function getCategory(cno) {
+    for (let i = 0; i <= categoryStaff.length - 1; i++) {
+        if (categoryStaff[i].cno == cno) {
+            return categoryStaff[i];
+        }
+    }
+}
+
+/*================삭제 버튼=========================== */
+function staffBtnDelete(sno) { //console.log("delete");
+    for (let i = 0; i <= staffInfo.length - 1; i++) {
+        if (staffInfo[i].sno == sno) {
+            staffInfo.splice(i, 1);
+            alert('사원정보가 삭제 되었습니다.');
+            staffPrint();
+            return;
+        }
+    }
+}
+/*===============수정 버튼========================== */
+function staffBtnEdit(sno) {
+    console.log("edit")
+    for (let i = 0; i <= staffInfo.length - 1; i++) {
+        let staff = staffInfo[i]
+        if (staff.sno == sno) {
+            const names = prompt('수정할 이름:');
+            const rank = prompt('수정할 직급:');
+            const cname = Number(prompt('수정할 부서:'));
+            staff.names = names;
+            staff.rank = rank;
+            staff.cno = cname
+            alert('정보 수정 완료')
+            staffPrint();
+            return;
+        }
+    }
 }

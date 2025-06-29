@@ -3,59 +3,211 @@
 
 <head>
     <meta charset='utf-8'>
+
 </head>
+<style>
+    /* 전체 레이아웃 컨테이너 */
+    .centerWrap {
+        width: 100%;
+        max-width: 960px;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        margin: 50px auto;
+    }
+
+    /* 등록 영역 */
+  .centerHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+
+.formRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    /* 입력 필드 (input, select) 공통 스타일 */
+    .centerHeader input,
+    .centerHeader select {
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+    }
+
+    /* 등록 버튼 */
+  .addBtn {
+    margin-left: auto;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #4c6ef5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    #main {
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+    /* 테이블 전체 */
+    .mainTable {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* 테이블 헤더 */
+    #main thead {
+        background-color: #f8f9fa;
+    }
+
+    #main th {
+        padding: 14px 16px;
+        font-weight: 600;
+        border-bottom: 2px solid #dee2e6;
+        color: #495057;
+    }
+
+    /* 테이블 바디 */
+    #main tbody tr:hover {
+        background-color: #f1f3f5;
+    }
+
+    #main td {
+        padding: 5px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    /* 테이블 내 이미지 */
+    #main img {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        object-fit: cover;
+        border: 1px solid #e9ecef;
+    }
+
+    /* 테이블 내 버튼 공통 스타일 */
+    .deleteBtn,
+    .editBtn {
+        font-size: 15px;
+        padding: 7px 12px;
+        margin: 0 4px;
+        border-radius: 6px;
+        font-weight: bold;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    /* 수정 버튼 */
+    .editBtn {
+        color: #4c6ef5;
+        background-color: #edf2ff;
+        border-color: #dbe4ff;
+    }
+
+    /* 삭제 버튼 */
+    .deleteBtn {
+        color: #f03e3e;
+        background-color: #fff5f5;
+        border-color: #ffe3e3;
+    }
+</style>
 
 <body>
     <h1>인사관리 대시보드</h1>
     <p>부서,사원,휴가 통합 시스템</p>
 
-    <div> <!--부서관리-->
+    <div>
         <p>부서관리</p>
         <div>
-            <input type="text">
-            <button>추가</button>
+            <input class="departmentInput"type="text">
+            <button onclick="departmentAdd()">추가</button>
         </div>
         <div>
             <table>
                 <thead>
+                    <tr>
                     <th>부서명</th>
                     <th>관리</th>
+                    </tr>
                 </thead>
+                <tbody class="leftTbody">
+                    <tr>
+                        <td>개발팀</td>
+                        <td>
+                            <button class="eidBtn" onclick="departmentBtnEdit()">수정</button>
+                            <button class="delBtn" onclick="departmentBtnDelete()">삭제</button>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
-    </div><!--부서관리 end-->
+    </div> <!--부서관리 end-->
     <div class="centerWrap">
 
         <div class="centerHeader"> <!-- 사원 등록-->
-            <h3>사원등록</h3>
-            이름 : <input class="namesInput" type="text" />
-            직급 : <input class="rankInput" type="text" /><br />
-            사진 : <input class="staffImage" type="file" accept="image/* "/>
-           
-             <br /><br /><br />
-            부서 
-            <select class="categotyRank">
+
+            <div class="fromRow">
+                이름 : <input class="namesInput" type="text" />
+                직급 : <input class="rankInput" type="text" />
+            </div>
+            <div class="formRow">
+                사진 : <input class="staffImage" type="file" accept="image/* " />
+            
+            부서
+            <select class="categoryRank">
                 <option value="" disabled selected> 카테고리 선택하세요. </option>
                 <option value="1"> 개발팀 </option>
                 <option value="2"> 디자인팀 </option>
                 <option value="3"> 기획팀 </option>
             </select>
-             <button onclick="staffManagement()"> 등록 </button>
+            </div>
+            <button class="addBtn" onclick="staffManagement()"> 등록 </button>
         </div> <!-- 사원등록 end-->
-        <div class="cneterContent">
+        <div>
             <h3>사원 전체 목록</h3>
-            <table>
-                <thead>
-                    <th>사진</th> <th>이름</th> <th>부서</th>
-                    <th>직급</th> <th>관리</th>
-                </thead>
-                <tbody>
-                    <td><img src="https://placehold.co/100x100" /></td>
-                     <td>유재석</td> <td>기획팀</td>
-                    <td>부장</td> <td><button class="editBtn">수정</button> <button class="deleteBtn">삭제</button></td>
-                </tbody>
-            </table>
+            <div class="main">
+                <table class="mainTable">
+                    <thead>
+                        <tr>
+                            <th>사진</th>
+                            <th>이름</th>
+                            <th>부서</th>
+                            <th>직급</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody class="centerTbody">
+                        <tr>
+                            <td><img src="https://placehold.co/100x100" /></td>
+                            <td>유재석</td>
+                            <td>기획팀</td>
+                            <td>부장</td>
+                            <td>
+                                <button onclick="staffBtnEdit()" class="editBtn">수정</button>
+                                <button onclick="staffBtnDelete()" class="deleteBtn">삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
